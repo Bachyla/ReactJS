@@ -17,7 +17,7 @@ export default class RandomPlanet extends Component {
   // Лучшее место для запросов к API для получения данных
   componentDidMount() {
     this.updatePlanet();
-    this.interval = setInterval(this.updatePlanet, 3500);
+    this.interval = setInterval(this.updatePlanet, 4500);
     // clearInterval(this.interval);
   }
 
