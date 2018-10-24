@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Spinner from '../spinner/spinner'
 import './person-details.css';
 import SwapiService from "../../services/swapi-service";
 
@@ -37,7 +37,7 @@ export default class PersonDetails extends Component {
   render() {
 
     if (!this.state.person) {
-      return <span>Select a person from a list</span>;
+      return <Spinner />;
     }
 
     const { id, name, gender,
