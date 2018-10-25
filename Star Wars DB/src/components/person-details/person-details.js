@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Spinner from '../spinner/spinner'
+
 import './person-details.css';
 import SwapiService from "../../services/swapi-service";
+import ErrorButton from "../error-button/error-button";
 
 export default class PersonDetails extends Component {
 
@@ -36,12 +37,13 @@ export default class PersonDetails extends Component {
 
   render() {
 
-    if (!this.state.person) {
-      return <Spinner />;
+    const { person } = this.state;
+    if (!person) {
+      return <span>Select a person from a list</span>;
     }
 
     const { id, name, gender,
-              birthYear, eyeColor } = this.state.person;
+              birthYear, eyeColor } = person;
 
     return (
       <div className="person-details card">
@@ -50,21 +52,22 @@ export default class PersonDetails extends Component {
           alt="character"/>
 
         <div className="card-body">
-          <h4>{name} {this.props.personId}</h4>
+          <h4>{name}</h4>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
-              <span className="term">Gender:</span>
+              <span className="term">Gender</span>
               <span>{gender}</span>
             </li>
             <li className="list-group-item">
-              <span className="term">Birth Year:</span>
+              <span className="term">Birth Year</span>
               <span>{birthYear}</span>
             </li>
             <li className="list-group-item">
-              <span className="term">Eye Color:</span>
+              <span className="term">Eye Color</span>
               <span>{eyeColor}</span>
             </li>
           </ul>
+          <ErrorButton />
         </div>
       </div>
     )

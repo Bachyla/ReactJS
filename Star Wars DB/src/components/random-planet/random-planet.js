@@ -14,12 +14,12 @@ export default class RandomPlanet extends Component {
     planet: {},
     loading: true
   };
-  // Лучшее место для запросов к API для получения данных
+
   componentDidMount() {
     this.updatePlanet();
-    this.interval = setInterval(this.updatePlanet, 4500);
+    this.interval = setInterval(this.updatePlanet, 10000);
   }
-  
+
   componentWillUnmount() {
     clearInterval(this.interval);
   }
@@ -40,7 +40,6 @@ export default class RandomPlanet extends Component {
   };
 
   updatePlanet = () => {
-    console.log('update');
     const id = Math.floor(Math.random()*17) + 2;
     this.swapiService
       .getPlanet(id)
@@ -75,20 +74,21 @@ const PlanetView = ({ planet }) => {
   return (
     <React.Fragment>
       <img className="planet-image"
-           src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} />
+           src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
+           alt="planet" />
       <div>
         <h4>{name}</h4>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            <span className="term">Population:</span>
+            <span className="term">Population</span>
             <span>{population}</span>
           </li>
           <li className="list-group-item">
-            <span className="term">Rotation Period:</span>
+            <span className="term">Rotation Period</span>
             <span>{rotationPeriod}</span>
           </li>
           <li className="list-group-item">
-            <span className="term">Diameter:</span>
+            <span className="term">Diameter</span>
             <span>{diameter}</span>
           </li>
         </ul>
