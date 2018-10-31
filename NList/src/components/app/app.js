@@ -32,14 +32,14 @@ const myNews = [
 ];
 
 class Article extends Component {
-    state = {
-        visible: false,
-    }
+  state = {
+    visible: false
+  };
 
-    handleReadMoreClck = (e) => { 
-        e.preventDefault()
-        this.setState({ visible: true })
-    }
+  handleReadMoreClck = e => {
+    e.preventDefault();
+    this.setState({ visible: true });
+  };
 
   render() {
     const { author, text, bigText } = this.props.data;
@@ -48,46 +48,68 @@ class Article extends Component {
       <div className="article">
         <p className="news__author">{author}:</p>
         <p className="news__text">{text}</p>
-        { /* если не visible, то показывай */
-          !visible && <a onClick={this.handleReadMoreClck} href="#" className='news__readmore'>Подробнее</a>
-        }
-        { /* если visible, то показывай */
-          visible && <p className='news__big-text'>{bigText}</p>
-        }
+        {/* если не visible, то показывай */
+        !visible && (
+          <a
+            onClick={this.handleReadMoreClck}
+            href="#"
+            className="news__readmore"
+          >
+            Подробнее
+          </a>
+        )}
+        {/* если visible, то показывай */
+        visible && <p className="news__big-text">{bigText}</p>}
       </div>
     );
   }
 }
+
 Article.propTypes = {
   data: PropTypes.shape({
     author: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    bigText: PropTypes.string.isRequired,
+    bigText: PropTypes.string.isRequired
   })
 };
 
 class News extends Component {
+  state = {
+    counter: 0
+  };
+  handleCounter = () => {
+    // добавили новый метод
+    this.setState({ counter: ++this.state.counter }); // в котором увеличиваем счетчик
+  };
+
   renderNews = () => {
     const { data } = this.props;
     let newsTemplate = null;
 
     if (data.length) {
-      newsTemplate = data.map(item => {
+      newsTemplate = data.map(function(item) {
         return <Article key={item.id} data={item} />;
       });
     } else {
-      newsTemplate = <p>К сожалению, новостей нет</p>;
+      newsTemplate = <p>К сожалению новостей нет</p>;
     }
+
     return newsTemplate;
   };
 
   render() {
     const { data } = this.props;
+    const { counter } = this.state;
 
     return (
       <div className="news">
         {this.renderNews()}
-        {data.length ? <strong>Всего новостей: {data.length}</strong> : null}
+        {data.length ? (
+          <strong onClick={this.handleCounter}>
+            Всего новостей: {data.length}
+          </strong>
+        ) : null}
+        <p>Всего кликов: {counter}</p>
       </div>
     );
   }
