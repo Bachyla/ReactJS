@@ -37,21 +37,26 @@ class Article extends Component {
 }
 
 class News extends Component {
+    renderNews = () => {
+        const { data } = this.props;
+        let newsTemplate = null;
+    
+        if (data.length) {
+          newsTemplate = data.map(item => {
+            return <Article key={item.id} data={item} />
+          });
+        } else {
+          newsTemplate = <p>К сожалению, новостей нет</p>;
+        }
+        return newsTemplate;
+    }
+    
   render() {
     const { data } = this.props;
-    let newsTemplate;
-
-    if (data.length) {
-      newsTemplate = data.map(item => {
-        return <Article key={item.id} data={item} />
-      });
-    } else {
-      newsTemplate = <p>К сожалению, новостей нет</p>;
-    }
 
     return (
       <div className="news">
-        {newsTemplate}
+        {this.renderNews()}
         {
             data.length ? <strong>Всего новостей: {data.length}</strong> : null
         }
