@@ -24,6 +24,18 @@ const myNews = [
   }
 ];
 
+class Article extends Component {
+    render() {
+        const { author, text } = this.props.data
+        return (
+            <div className="article">
+                <p className="news__author">{author}:</p>
+                <p className="news__text">{text}</p>
+            </div>
+        )
+    }
+}
+
 class News extends Component {
   render() {
     const { data } = this.props;
@@ -31,12 +43,7 @@ class News extends Component {
 
     if (data.length) {
       newsTemplate = data.map(item => {
-        return (
-          <div key={item.id}>
-            <p className="news__author">{item.author}:</p>
-            <p className="news__text">{item.text}</p>
-          </div>
-        );
+        return <Article key={item.id} data={item} />
       });
     } else {
       newsTemplate = <p>К сожалению, новостей нет</p>;
@@ -53,16 +60,13 @@ class News extends Component {
   }
 }
 
-const Comments = () => {
-  return <p>Нет новостей - комментировать нечего.</p>;
-};
 
 export default class App extends Component {
   render() {
     return (
       <React.Fragment>
+          <h3>Новости</h3>
         <News data={myNews} />
-        <Comments />
       </React.Fragment>
     );
   }
