@@ -111,8 +111,11 @@ class TestInput extends React.Component {
       super(props)
       this.input = React.createRef()
     }
-    onBtnClickHandler = (e) => {
-      alert(this.input.current.value);
+    componentDidMount() {
+      this.input.current.focus()
+    }
+    onBtnClickHandler = () => {
+      alert(this.input.current.value)
     }
     render() {
       return (
