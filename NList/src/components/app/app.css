@@ -11,6 +11,10 @@
     margin: 0 0 5px;
   }
   
+  .test-input {
+    margin: 0 5px 5px 0;
+  }
+
   .article {
     background: #FFF;
     border: 1px solid rgba(0, 89, 181, 0.82);

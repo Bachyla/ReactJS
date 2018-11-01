@@ -74,13 +74,6 @@ Article.propTypes = {
 };
 
 class News extends Component {
-  state = {
-    counter: 0
-  };
-  handleCounter = () => {
-    // добавили новый метод
-    this.setState({ counter: ++this.state.counter }); // в котором увеличиваем счетчик
-  };
 
   renderNews = () => {
     const { data } = this.props;
@@ -99,7 +92,6 @@ class News extends Component {
 
   render() {
     const { data } = this.props;
-    const { counter } = this.state;
 
     return (
       <div className="news">
@@ -109,17 +101,40 @@ class News extends Component {
             Всего новостей: {data.length}
           </strong>
         ) : null}
-        <p>Всего кликов: {counter}</p>
       </div>
     );
   }
 }
+
+class TestInput extends React.Component {
+    constructor(props) {
+      super(props)
+      this.input = React.createRef()
+    }
+    onBtnClickHandler = (e) => {
+      alert(this.input.current.value);
+    }
+    render() {
+      return (
+        <React.Fragment>
+            <input
+              className='test-input'
+              defaultValue=''
+              placeholder='введите значение'
+              ref={this.input}
+            />
+          <button onClick={this.onBtnClickHandler}>Показать alert</button>
+        </React.Fragment>
+      )
+    }
+  }
 
 export default class App extends Component {
   render() {
     return (
       <React.Fragment>
         <h3>Новости</h3>
+        <TestInput />
         <News data={myNews} />
       </React.Fragment>
     );
