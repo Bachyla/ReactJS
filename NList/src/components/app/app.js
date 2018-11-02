@@ -32,7 +32,9 @@ import Add from '../add/add'
           return response.json()
         })
         .then(data => {
-          this.setState({ isLoading: false, news: data })
+          setTimeout(() => {
+            this.setState({ isLoading: false, news: data })
+          }, 3000)
         })
     }
   }
