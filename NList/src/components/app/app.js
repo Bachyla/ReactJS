@@ -107,26 +107,56 @@ class News extends Component {
 }
 
 class Add extends React.Component {
+
+    state = {
+        name: '',
+        text: '',
+        agree: false,
+    }
+
     onBtnClickHandler = (e) => {
       e.preventDefault()
     }
+
+    handleNameChange = (e) => {
+        this.setState({ name: e.currentTarget.value })
+    }
+
+    handleTextChange = (e) => {
+        this.setState({ text: e.currentTarget.value })
+    }
+
+    handleCheckboxChange = (e) => {
+        this.setState({ agree: e.currentTarget.checked })
+    }
+
     render() {
+
+        const { name, text, agree } = this.state;
+
       return (
         <form className='add'>
           <input
             type='text'
+            onChange={this.handleNameChange}
             className='add__author'
             placeholder='Ваше имя'
+            value={name}
           />
           <textarea
+            onChange={this.handleTextChange}
             className='add__text'
             placeholder='Текст новости'
+            text={text}
           ></textarea>
           <label className='add__checkrule'>
-            <input type='checkbox' /> Я согласен с правилами
+            <input 
+            onChange={this.handleCheckboxChange}
+            type='checkbox' /> Я согласен с правилами
           </label>
           <button
             className='add__btn'
+            disabled={!agree}
             onClick={this.onBtnClickHandler}>
             Показать alert
           </button>
