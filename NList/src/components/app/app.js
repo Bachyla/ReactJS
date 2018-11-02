@@ -106,28 +106,31 @@ class News extends Component {
   }
 }
 
-class TestInput extends React.Component {
-    constructor(props) {
-      super(props)
-      this.input = React.createRef()
-    }
-    componentDidMount() {
-      this.input.current.focus()
-    }
-    onBtnClickHandler = () => {
-      alert(this.input.current.value)
+class Add extends React.Component {
+    onBtnClickHandler = (e) => {
+      e.preventDefault()
     }
     render() {
       return (
-        <React.Fragment>
-            <input
-              className='test-input'
-              defaultValue=''
-              placeholder='введите значение'
-              ref={this.input}
-            />
-          <button onClick={this.onBtnClickHandler}>Показать alert</button>
-        </React.Fragment>
+        <form className='add'>
+          <input
+            type='text'
+            className='add__author'
+            placeholder='Ваше имя'
+          />
+          <textarea
+            className='add__text'
+            placeholder='Текст новости'
+          ></textarea>
+          <label className='add__checkrule'>
+            <input type='checkbox' /> Я согласен с правилами
+          </label>
+          <button
+            className='add__btn'
+            onClick={this.onBtnClickHandler}>
+            Показать alert
+          </button>
+        </form>
       )
     }
   }
@@ -137,7 +140,7 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <h3>Новости</h3>
-        <TestInput />
+        <Add />
         <News data={myNews} />
       </React.Fragment>
     );
