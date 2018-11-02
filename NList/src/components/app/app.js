@@ -112,18 +112,24 @@ class Add extends React.Component {
         name: '',
         text: '',
         agree: false,
-    }
+      }
+
+      validate = () => {
+        const { name, text, agree } = this.state
+        if (name.trim() && text.trim() && agree) {
+          return true
+        }
+        return false
+      }
+
+      handleChange = (e) => {
+        const { id, value } = e.currentTarget
+        this.setState({ [id]: e.currentTarget.value })
+      }
 
     onBtnClickHandler = (e) => {
-      e.preventDefault()
-    }
-
-    handleNameChange = (e) => {
-        this.setState({ name: e.currentTarget.value })
-    }
-
-    handleTextChange = (e) => {
-        this.setState({ text: e.currentTarget.value })
+        const { name, text } = this.state
+      alert(name + '\n' + text)
     }
 
     handleCheckboxChange = (e) => {
@@ -137,14 +143,16 @@ class Add extends React.Component {
       return (
         <form className='add'>
           <input
+            id='name'
             type='text'
-            onChange={this.handleNameChange}
+            onChange={this.handleChange}
             className='add__author'
             placeholder='Ваше имя'
             value={name}
           />
           <textarea
-            onChange={this.handleTextChange}
+          id='text'
+            onChange={this.handleChange}
             className='add__text'
             placeholder='Текст новости'
             text={text}
@@ -156,7 +164,7 @@ class Add extends React.Component {
           </label>
           <button
             className='add__btn'
-            disabled={!agree}
+            disabled={!this.validate()}
             onClick={this.onBtnClickHandler}>
             Показать alert
           </button>
