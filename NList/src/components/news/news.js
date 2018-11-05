@@ -8,7 +8,7 @@ export default class News extends Component {
     filteredNews: this.props.data,
   }
 
-  componentWillReceiveProps(nextProps) {
+  static getDerivedStateFromProps(nextProps) {
     let nextFilteredNews = [...nextProps.data]
   
     nextFilteredNews.forEach((item, index) => {
@@ -17,7 +17,9 @@ export default class News extends Component {
       }
     })
   
-    this.setState({ filteredNews: nextFilteredNews })
+    return {
+      filteredNews: nextFilteredNews,
+    }
   }
   renderNews = () => {
     const { filteredNews } = this.state
