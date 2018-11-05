@@ -3,34 +3,51 @@ import PropTypes from 'prop-types';
 import Article from '../article/article'
 
 export default class News extends Component {
-    // удалили старое состояние counter: 0 (старый ненужный код)
-    renderNews = () => {
-      const { data } = this.props
-      let newsTemplate = null
 
-      if (data.length) {
-        newsTemplate = data.map(function(item) {
-          return <Article key={item.id} data={item}/>
-        })
-      } else {
-        newsTemplate = <p>К сожалению новостей нет</p>
-      }
-
-      return newsTemplate
-    }
-    render() {
-      const { data } = this.props
-
-      return (
-        <div className='news'>
-          {this.renderNews()}
-          {
-            data.length ? <strong className={'news__count'}>Всего новостей: {data.length}</strong> : null
-          }
-        </div>
-      );
-    }
+  state = { 
+    filteredNews: this.props.data,
   }
+
+  componentWillReceiveProps(nextProps) {
+    let nextFilteredNews = [...nextProps.data]
+  
+    nextFilteredNews.forEach((item, index) => {
+      if (item.bigText.toLowerCase().indexOf('pubg') !== -1) {
+        item.bigText = 'СПАМ'
+      }
+    })
+  
+    this.setState({ filteredNews: nextFilteredNews })
+  }
+  renderNews = () => {
+    const { filteredNews } = this.state
+    let newsTemplate = null
+
+    if (filteredNews.length) { 
+      newsTemplate = filteredNews.map(function(item) {
+        return <Article key={item.id} data={item} />
+      })
+    } else {
+      newsTemplate = <p>К сожалению новостей нет</p>
+    }
+
+    return newsTemplate
+  }
+  render() {
+    const { filteredNews } = this.state 
+
+    return (
+      <div className="news">
+        {this.renderNews()}
+        {filteredNews.length ? (
+          <strong className={'news__count'}>
+            Всего новостей: {filteredNews.length}
+          </strong>
+        ) : null}
+      </div>
+    )
+  }
+}
 
   News.propTypes = {
     data: PropTypes.array.isRequired
