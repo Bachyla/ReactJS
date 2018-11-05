@@ -3,6 +3,7 @@ import "./app.css";
 
 import News from '../news/news'
 import Add from '../add/add'
+import Spinner from '../spinner'
 
   export default class App extends Component {
     state = {
@@ -19,7 +20,7 @@ import Add from '../add/add'
         <React.Fragment>
           <Add onAddNews={this.handleAddNews}/>
           <h3>Новости</h3>
-          {isLoading && <p>Загружаю...</p>}
+          {isLoading && <Spinner />}
           {Array.isArray(news) && <News data={news} />}
         </React.Fragment>
       )
