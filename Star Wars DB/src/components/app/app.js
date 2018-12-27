@@ -10,14 +10,15 @@ import {
   PeoplePage,
   PlanetsPage,
   StarshipsPage,
+  MainPage,
   LoginPage,
-  SecretPage } from '../pages';
+  SecretPage} from '../pages';
 
 import { SwapiServiceProvider } from '../swapi-service-context';
 
 import './app.css';
 
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import StarshipDetails from '../sw-components/starship-details';
 
 export default class App extends Component {
@@ -56,11 +57,7 @@ export default class App extends Component {
               <RandomPlanet />
 
               <Switch>
-                <Route path="/"
-                       render={() => 
-                         <h2>Welcome to StarDB. <br/><br/> Here you can find the quantified set of Star Wars data.</h2>
-                      }
-                       exact />
+                <Route path="/" exact component={MainPage} />
                 <Route path="/people/:id?" component={PeoplePage} />
                 <Route path="/planets" component={PlanetsPage} />
                 <Route path="/starships" exact component={StarshipsPage} />
