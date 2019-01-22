@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import ToDoInput from 
-import ToDoList from 
-import Footer from
+import ToDoInput from '../components/todo-input/todo-input';
+import ToDoList from '../components/todo-list/todo-list';
+import Footer from '../components/footer/footer';
 import './todo.css';
 
 const TASKS = [
@@ -21,6 +21,11 @@ const TASKS = [
         text: 'Learn React Router',
         isCompleted: false,
     },
+    {
+        id: 4, 
+        text: 'Learn JavaScript',
+        isCompleted: true,
+    },
 ];
 
 class ToDo extends Component {
@@ -30,8 +35,8 @@ class ToDo extends Component {
 
     render() {
         const { activeFilter } = this.state;
-        const taskList = TASKS;
-        const isTasksExist = taskList && taskList.length > 0;
+        const tasksList = TASKS;
+        const isTasksExist = tasksList && tasksList.length > 0;
 
         return (
             <div className="todo-wrapper">
