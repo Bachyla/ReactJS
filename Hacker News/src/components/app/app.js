@@ -97,7 +97,7 @@ class News extends Component {
         case 'prev':
           this.updatePage(page - 1);
           break;
-        default: ;
+        default: console.log('hi');
       }
     }
   }
