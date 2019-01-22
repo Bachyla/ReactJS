@@ -6,11 +6,11 @@ import './news.css';
 const NewsPost = ({ author, created_at, num_comments, title, points, url }) => (
   <li className="news">
     <div className="description">
-      <a href={url} className="newsTitle">{title}</a>
-      <span className="text">{`${points} points`}</span>
-      <span className="comments">{`${num_comments} comments`}</span>
-      <span className="date">{new Date(created_at).toLocaleDateString()}</span>
-      <span className="author">{author}</span>
+      <a href={url} className="newsTitle">{`Title: ${title}`}<br/></a>
+      <span className="text">{`Points: ${points}`}<br/></span>
+      <span className="comments">{`Comments: ${num_comments}`}<br/></span>
+      <span className="date">{new Date(created_at).toLocaleDateString()}<br/></span>
+      <span className="author">{`Author: ${author}`}<br/></span>
     </div>
   </li>
 );

@@ -36,8 +36,8 @@ class News extends Component {
   state = {
     searchQuery: '',
     result: {},
-    hitsPerPage: 20,
-    page: 0,
+    hitsPerPage: 10,
+    page: 1,
   }
 
   componentDidMount() {
@@ -62,9 +62,9 @@ class News extends Component {
     if(key === 'Enter') {
       const { searchQuery, hitsPerPage } = this.state;
       this.setState({
-        page: 0,
+        page: 1,
       })
-      this.fetchData(searchQuery, hitsPerPage, 0);
+      this.fetchData(searchQuery, hitsPerPage, 1);
     }
   }
 
@@ -77,9 +77,9 @@ class News extends Component {
 
     this.setState({
       hitsPerPage: +value,
-      page: 0
+      page: 1
     }, () => {
-      this.fetchData(searchQuery, this.state.hitsPerPage, 0);
+      this.fetchData(searchQuery, this.state.hitsPerPage, 1);
     })
   }
 
