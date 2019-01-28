@@ -6,15 +6,18 @@
 .password-input {
     width: 184px;
     display: block;
+    margin-bottom: 10px;
 }
 
 .submit-input {
     display: block;
+    width: 23px;
+    height: 19px;
 }
 
 .form {
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 20px;
 }
 
@@ -30,3 +33,31 @@
     display: flex;
 }
 
+p {
+    margin: 0;
+    width: 240px;
+}
+
+.p-small {
+    text-indent: -13px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+a {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}

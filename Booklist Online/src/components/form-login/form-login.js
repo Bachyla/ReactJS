@@ -7,20 +7,24 @@ export default class FormLogin extends Component {
     state = {
         username: '',
         password: '',
-    }
+    };
 
-    onSubmit(event) {
-        console.log(`${this.state.username}, Hello!`);
-        event.preventDefault();
-    }
+    onUsernameChange = (e) => {
+        this.setState({
+            username: e.target.value
+        });
+    };
 
-    onUsernameChange = ({ target: { value } }) => {
-        this.setState({ username: value })
-    }
+    onPasswordChange = (e) => {
+        this.setState({
+            password: e.target.value
+        });
+    };
 
-    onPasswordChange = ({ target: { value } }) => {
-        this.setState({ password: value})
-        console.log(this.state.password)
+    onSubmit = (e) => {
+        e.preventDefault();
+        console.log(`Username: ${this.state.username}`);
+        console.log(`Password: ${this.state.password}`)
     }
 
     render () {
@@ -51,6 +55,25 @@ export default class FormLogin extends Component {
                     alt="Submit Form" 
                     />
                 </div>
+                    <p>You must be logged in to read full text of reviews.</p>
+                    <p className="p-small">> Logged-in users can make lists, save searches, e-mail, and more!</p>
+                    <p className="p-small">> Try a 
+                        <a 
+                            title="Try a free 14-day trial of Booklist Online today!" 
+                            href="*"> free trial 
+                        </a> trial or 
+                        <a 
+                            title="Subscribe" 
+                            href="*"> subscribe
+                        </a> today
+                    </p>
+                    <p className="margin-bottom-5">
+                        <a 
+                        href="*"
+                        name="lnkLostLogin"
+                        title="Forgot your password?">Forgot your password?
+                        </a>
+                    </p>
                 </label>
             </form>
         )
