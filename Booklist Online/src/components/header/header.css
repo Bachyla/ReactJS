@@ -3,8 +3,8 @@
     max-width: 980px;
     max-height: 179px;
     background-color: #74889d;
-    display: block;
-    margin: 10px auto;   
+    display: block;  
+    margin: 0 auto; 
 }
 
 .header .logo {

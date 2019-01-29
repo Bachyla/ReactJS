@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
 
-import ErrorBoundry from '../error-boundry'
-import Header from '../header'
+import ErrorBoundry from '../error-boundry';
+import Header from '../header';
+import Navigation from '../navigation'
+
 
 
 import './app.css';
@@ -15,6 +17,7 @@ export default class App extends Component {
       <Router>
         <Fragment>
           <Header />
+          <Navigation />
         </Fragment>
       </Router>
     </ErrorBoundry>
