@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 import ErrorBoundry from '../error-boundry';
 import Header from '../header';
 import Navigation from '../navigation'
+import Footer from '../footer'
 
 
 
@@ -18,6 +19,8 @@ export default class App extends Component {
         <Fragment>
           <Header />
           <Navigation />
+          <Navigation />
+          <Footer />
         </Fragment>
       </Router>
     </ErrorBoundry>

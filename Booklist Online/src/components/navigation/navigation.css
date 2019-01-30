@@ -32,6 +32,7 @@
 .submenu {
     display: none;
     opacity: 0;
+    position: absolute;
 }
 
 .submenu a {
@@ -42,6 +43,7 @@
 .submenu li {
     padding: 2px 0px 2px 0px;
     border-bottom: 1px solid grey;
+    background-color: white;
 }
 
 ul {
