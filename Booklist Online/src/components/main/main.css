@@ -1,0 +1,27 @@
+.main-container {
+    width: 100%;
+    max-width: 980px;
+    max-height: 1820px;
+    background-color: #74889d;
+    display: block;
+    margin: auto;
+}
+
+.main-container .top-border {
+    width: 100%;
+    height: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-container .left-border {
+    float: left;
+    width: 3px;
+    height: 99%;
+}
+
+.main-container .right-border {
+    float: right;
+    width: 3px;
+    height: 99%;
+}

@@ -2,8 +2,9 @@ import React, { Component, Fragment } from 'react';
 
 import ErrorBoundry from '../error-boundry';
 import Header from '../header';
-import Navigation from '../navigation'
-import Footer from '../footer'
+import Navigation from '../navigation';
+import Main from '../main';
+import Footer from '../footer';
 
 
 
@@ -19,6 +20,7 @@ export default class App extends Component {
         <Fragment>
           <Header />
           <Navigation />
+          <Main />
           <Navigation />
           <Footer />
         </Fragment>
