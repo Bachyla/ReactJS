@@ -6,8 +6,6 @@ import Navigation from '../navigation';
 import Main from '../main';
 import Footer from '../footer';
 
-
-
 import './app.css';
 
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -15,7 +13,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 export default class App extends Component {
   render() {
     return (
-    <ErrorBoundry>
+      <ErrorBoundry>
       <Router>
         <Fragment>
           <Header />

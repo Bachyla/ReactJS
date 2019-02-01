@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
@@ -13,7 +14,8 @@ const Footer = () => {
             <img src={border1} className="right-border"/>
             <div className="shell">
                 <p>Booklist Online: Book Review from the American Library Association</p>
-                <a>Privacy Policy</a>
+                <a  href="http://www.ala.org/privacypolicy"
+                    target="_blank">Privacy Policy</a>
                 <p>© 2019 Booklist Publications</p>
             </div>
         </div> 

@@ -1,7 +1,7 @@
 .main-container {
     width: 100%;
     max-width: 980px;
-    max-height: 1820px;
+    height: 1880px;
     background-color: #74889d;
     display: block;
     margin: auto;
@@ -17,11 +17,22 @@
 .main-container .left-border {
     float: left;
     width: 3px;
-    height: 99%;
+    height: 99.4%;
 }
 
 .main-container .right-border {
     float: right;
     width: 3px;
-    height: 99%;
+    height: 99.4%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-column {
+    width: 180px;
+    background-color: rgb(141, 166, 189);
+    height: 1869px;
 }

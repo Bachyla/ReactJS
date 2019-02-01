@@ -33,6 +33,7 @@
     display: none;
     opacity: 0;
     position: absolute;
+    width: inherit;
 }
 
 .submenu a {

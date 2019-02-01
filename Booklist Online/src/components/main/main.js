@@ -1,29 +1,31 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import './main.css';
 import border1 from '../../assets/images/header-rl-border.gif';
 import border2 from '../../assets/images/header-tb-border.gif';
 
-const Main = ({ left, middle, right }) => {
+import RightColumn from './right-column'
+
+const Main = ({ left, middle }) => {
     return (
         <div className="main-container">
             <img src={border2} className="top-border"/>
             <img src={border1} className="left-border"/>
             <img src={border1} className="right-border"/>
-            <img src={border2} className="top-border"/>
-            <Fragment>
+            <div className="flex">
                 <div>
                     {left}
                 </div>
                 <div>
                     {middle}
                 </div>
-                <div>
-                    {right}
+                <div className="right-column">
+                    <RightColumn />
                 </div>
-            </Fragment>
+            </div>
+            <img src={border2} className="top-border"/>
         </div>
     )
 }
