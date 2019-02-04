@@ -25,22 +25,22 @@ const QuickSearch = () => {
                 </div>
                 <div className="search-parameters">
                     <select>
-                        <option selected>Title</option>
-                        <option>Author</option>
-                        <option>ISBN</option>
-                        <option>Keyword</option>
+                        <option value="A">Title</option>
+                        <option value="B">Author</option>
+                        <option value="C">ISBN</option>
+                        <option value="D">Keyword</option>
                     </select>
                     <select>
-                        <option selected>All Content</option>
-                        <option>Reviews Only</option>
-                        <option>Feature Content Only</option>
+                        <option value="A">All Content</option>
+                        <option value="B">Reviews Only</option>
+                        <option value="C">Feature Content Only</option>
                     </select>
                     <select>
-                        <option selected>All Sections</option>
-                        <option>Adult Books</option>
-                        <option>Books for Youth</option>
-                        <option>Media</option>
-                        <option>Reference Sources</option>
+                        <option value="A">All Sections</option>
+                        <option value="B">Adult Books</option>
+                        <option value="C">Books for Youth</option>
+                        <option value="D">Media</option>
+                        <option value="E">Reference Sources</option>
                     </select>
                     <a href="/AdvancedSearchReviews.aspx">Go 
                         to Advanced Search</a>

@@ -17,13 +17,9 @@ const Main = () => {
             <img src={Border1} className="left-border"/>
             <img src={Border1} className="right-border"/>
             <div className="flex">
-                <div className="left-column">
                     <LeftColumn />
-                </div>
                     <MainColumn />
-                <div className="right-column">
                     <RightColumn />
-                </div>
             </div>
             <img src={Border2} className="top-border"/>
         </div>

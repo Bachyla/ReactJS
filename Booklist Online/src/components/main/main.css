@@ -30,14 +30,3 @@
     display: flex;
     justify-content: space-around;
 }
-
-.left-column {
-    width: 180px;
-    background-color: rgb(141, 166, 189);
-}
-
-.right-column {
-    width: 180px;
-    background-color: rgb(141, 166, 189);
-    height: 1869px;
-}

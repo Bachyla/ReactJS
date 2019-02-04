@@ -9,6 +9,7 @@ import pinterestIcon from '../../../assets/images/social/pinterest.svg'
 
 const RightColumn = () => {
     return (
+        <div className="right-column">
             <div className="social-links">
 			    FOLLOW BOOKLIST!
                 <div className="flex">
@@ -29,6 +30,7 @@ const RightColumn = () => {
                     </a>     
                 </div>
             </div>
+        </div>
     );
 };
 
