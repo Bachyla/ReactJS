@@ -30,6 +30,7 @@
 }
 
 .submenu {
+    z-index: 2;
     display: none;
     opacity: 0;
     position: absolute;
