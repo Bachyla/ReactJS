@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-import './left-column.css'
+import './left-column.css';
 
-import QuickSearch from './quick-search'
+import QuickSearch from './quick-search';
 
-const RightColumn = () => {
+const LeftColumn = () => {
     return(
         <QuickSearch />
     );
 };
 
-export default RightColumn;
+export default LeftColumn;
