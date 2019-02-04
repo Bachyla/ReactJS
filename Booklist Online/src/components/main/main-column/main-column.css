@@ -1,3 +1,11 @@
 .main-column {
     width: 610px;
 }
+
+.main-column .right-border {
+    height: 1869px;
+}
+
+.main-column .left-border {
+    height: 1869px;
+}

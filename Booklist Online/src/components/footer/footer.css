@@ -1,5 +1,5 @@
 .shell {
-    padding-left: 114px;
+    padding-left: 75px;
     padding-bottom: 10px;
     padding-top: 5px;
 }
@@ -11,6 +11,7 @@
     background-color: #74889d;
     display: block;  
     margin: 0 auto; 
+    margin-bottom: 10px;
 }
 
 .footer .top-border {
