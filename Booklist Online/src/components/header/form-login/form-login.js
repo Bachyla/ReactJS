@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './form-login.css';
-import SubmitImage from '../../assets/images/submit-image.gif';
+import SubmitImage from '../../../assets/images/submit-image.gif'
 
 export default class FormLogin extends Component {
     state = {

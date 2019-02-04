@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
-import FormLogin from '../form-login/index';
+import FormLogin from './form-login';
 
 import './header.css';
 import icon from '../../assets/images/logo.gif';
