@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import './right-column.css';
 
@@ -9,7 +9,6 @@ import pinterestIcon from '../../../assets/images/social/pinterest.svg'
 
 const RightColumn = () => {
     return (
-        <Fragment>
             <div className="social-links">
 			    FOLLOW BOOKLIST!
                 <div className="flex">
@@ -30,8 +29,7 @@ const RightColumn = () => {
                     </a>     
                 </div>
             </div>
-        </Fragment>
-    )
-}
+    );
+};
 
 export default RightColumn;

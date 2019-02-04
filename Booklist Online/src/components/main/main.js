@@ -3,20 +3,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './main.css';
-import border1 from '../../assets/images/header-rl-border.gif';
-import border2 from '../../assets/images/header-tb-border.gif';
+import Border1 from '../../assets/images/header-rl-border.gif';
+import Border2 from '../../assets/images/header-tb-border.gif';
 
-import RightColumn from './right-column'
+import LeftColumn from './left-column';
+import RightColumn from './right-column';
 
-const Main = ({ left, middle }) => {
+const Main = ({ middle }) => {
     return (
         <div className="main-container">
-            <img src={border2} className="top-border"/>
-            <img src={border1} className="left-border"/>
-            <img src={border1} className="right-border"/>
+            <img src={Border2} className="top-border"/>
+            <img src={Border1} className="left-border"/>
+            <img src={Border1} className="right-border"/>
             <div className="flex">
-                <div>
-                    {left}
+                <div className="left-column">
+                    <LeftColumn />
                 </div>
                 <div>
                     {middle}
@@ -25,7 +26,7 @@ const Main = ({ left, middle }) => {
                     <RightColumn />
                 </div>
             </div>
-            <img src={border2} className="top-border"/>
+            <img src={Border2} className="top-border"/>
         </div>
     )
 }

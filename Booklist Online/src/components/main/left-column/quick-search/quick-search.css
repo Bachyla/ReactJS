@@ -1,0 +1,37 @@
+.search-input {
+    width: 119px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submit-input {
+    display: block;
+    width: 23px;
+    height: 19px;
+}
+
+.main-search-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.search-parameters {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-parameters select {
+    width: 148px;
+    display: block;
+    margin: 3px auto;
+}
+
+.search-parameters a {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}

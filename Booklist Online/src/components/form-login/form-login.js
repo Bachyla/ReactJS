@@ -36,8 +36,7 @@ export default class FormLogin extends Component {
                     type="text" 
                     name="username" 
                     value={this.state.username}
-                    onChange={this.onUsernameChange}
-                    />
+                    onChange={this.onUsernameChange} />
                 </label>
                <label className="label">Password:
                <div className="display-flex">
@@ -46,33 +45,31 @@ export default class FormLogin extends Component {
                     type="password" 
                     name="password" 
                     value={this.state.password}
-                    onChange={this.onPasswordChange}
-                    />
+                    onChange={this.onPasswordChange} />
+
                     <input
                     className="submit-input"
                     type="image" 
                     src={SubmitImage} 
-                    alt="Submit Form" 
-                    />
+                    alt="Submit Form" />
                 </div>
                     <p>You must be logged in to read full text of reviews.</p>
                     <p className="p-small">> Logged-in users can make lists, save searches, e-mail, and more!</p>
                     <p className="p-small">> Try a 
                         <a 
                             title="Try a free 14-day trial of Booklist Online today!" 
-                            href="*"> free trial 
-                        </a> trial or 
+                            href="*"> free trial </a> 
+                            trial or 
                         <a 
                             title="Subscribe" 
-                            href="*"> subscribe
-                        </a> today
+                            href="*"> subscribe </a> 
+                            today
                     </p>
                     <p className="margin-bottom-5">
                         <a 
                         href="*"
                         name="lnkLostLogin"
-                        title="Forgot your password?">Forgot your password?
-                        </a>
+                        title="Forgot your password?">Forgot your password? </a>
                     </p>
                 </label>
             </form>
