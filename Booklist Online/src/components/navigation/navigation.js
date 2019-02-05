@@ -12,16 +12,16 @@ const Navigation = () => {
         <Fragment>
             <ul className="navigation">
                 <li>
-                    <Link to="/home/">HOME</Link>
+                    <Link to="/">HOME</Link>
                 </li>
                 <li>
-                    <Link to="/reviews/">ONLINE EXCLUSIVE REVIEWS</Link>
+                    <Link to="/online-exclusive-reviews/">ONLINE EXCLUSIVE REVIEWS</Link>
                 </li>
                 <li>
-                    <Link to="/home/">BOOK AWARDS</Link>
+                    <Link to="/book-awards/">BOOK AWARDS</Link>
                 </li>
                 <li>
-                    <Link to="/reader/">BOOKLIST READER</Link>
+                    <a href="https://www.booklistreader.com/">BOOKLIST READER</a>
                 </li>
                 <li>
                     <Link to="/newsletters/">NEWSLETTERS</Link>

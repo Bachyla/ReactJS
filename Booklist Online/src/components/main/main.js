@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './main.css';
 import Border1 from '../../assets/images/header-rl-border.gif';
@@ -24,12 +23,6 @@ const Main = () => {
             <img src={Border2} className="top-border"/>
         </div>
     )
-}
-
-Main.propTypes = {
-    left: PropTypes.node,
-    middle: PropTypes.node,
-    right: PropTypes.node,
 }
 
 export default Main;
