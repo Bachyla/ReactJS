@@ -1,0 +1,14 @@
+.main-title {
+    font-size: 13px;
+    font-family: verdana;
+    font-weight: bold;
+    color: #3e3c3a;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.link {
+    display: block;
+    margin: 10px 15px 0px 15px;
+}
