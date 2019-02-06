@@ -19,7 +19,6 @@ export default class MainColumn extends Component {
         return (
             <div className="main-column">
                 <img src={Border1} className="left-border"/>
-                <img src={Border1} className="right-border"/>
                 <Switch>
                     <Route path="/" exact component={HomePage} />
                     <Route path="/online-exclusive-reviews" exact component={OnlineExclusiveReviews} />

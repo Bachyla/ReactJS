@@ -6,10 +6,12 @@ import './right-column.css';
 import facebookIcon from '../../../assets/images/social/facebook.svg';
 import twitterIcon from '../../../assets/images/social/twitter.svg'
 import pinterestIcon from '../../../assets/images/social/pinterest.svg'
+import Border1 from '../../../assets/images/header-rl-border.gif';
 
 const RightColumn = () => {
     return (
         <div className="right-column">
+        <img src={Border1} className="left-border"/>
             <div className="social-links">
 			    FOLLOW BOOKLIST!
                 <div className="flex">
