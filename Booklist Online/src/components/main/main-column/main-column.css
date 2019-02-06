@@ -6,9 +6,12 @@
     padding-top: 15px;
 }
 
+.margin-top-5 {
+    margin-top: 5px;
+}
+
 .main-column {
-    padding-right: 37px;
-    width: 575px;
+    width: 606px;
 }
 
 .main-column .right-border {
@@ -18,7 +21,13 @@
 
 .main-column .left-border {
     height: 100%;
-    padding-right: 5px; 
+    padding-right: 3px; 
+    margin-left: -2px;
+}
+/* Online Exclusive Reviews page START*/
+.oer-main-column {
+    padding-right: 37px;
+    width: 575px;
 }
 
 .oer-main-title {
@@ -54,3 +63,59 @@
     text-align: left;
     list-style-type: none;
 }
+/* Online Exclusive Reviews page END*/
+
+/* Home Page START */
+.home-container {
+    display: flex;
+}
+
+.rotd-container {
+    padding: 0 10px 60px 10px;
+}
+
+.home-left-column {
+    width: 57.3%;
+    height: 1450px;
+}
+
+.home-right-column {
+    width: 42.7%;
+    height: 1450px;
+}
+
+.rotd-image-title {
+    margin-left: -10px;
+    width: 346px;
+    height: 32px;
+}
+
+.rotd-image-book {
+    float: right;
+    width: 90px;
+    height: 135px;
+    margin: 5px 10px 4px 5px;
+}
+
+.rotd-title-link {
+    font-family: Verdana;
+    font-size: 16px;
+    color: rgb(153, 0, 0);
+    cursor: pointer;
+}
+
+.rotd-link {
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgb(153, 0, 0);
+    cursor: pointer;
+}
+
+.rotd-p {
+    display: block;
+    font-size: 12px;
+    font-family: Verdana;
+    color: #333333;
+}
+/* Home Page END */
