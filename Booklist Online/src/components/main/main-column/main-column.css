@@ -10,6 +10,20 @@
     margin-top: 5px;
 }
 
+.read-more-link {
+    color: #a94432;
+    font-family: Verdana;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.read-more-link a {
+    color: #a94432;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .main-column {
     width: 606px;
 }
