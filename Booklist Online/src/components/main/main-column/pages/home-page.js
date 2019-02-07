@@ -11,6 +11,12 @@ import LAImage4 from '../../../../assets/images/home/writers-readers-Illuminati_
 import LAImage5 from '../../../../assets/images/home/top-10-diverse.jpg';
 import LAImage6 from '../../../../assets/images/home/top-10-diverse-fiction.jpg';
 
+import TheBooklistReaderImage from '../../../../assets/images/home/BKLReader.jpg';
+
+import BestNewBooksImage1 from '../../../../assets/images/home/Best-New-Books-Week-of-February-5-2019-featured.jpg';
+import BestNewBooksImage2 from '../../../../assets/images/home/Best-New-Books-2.jpg';
+import BestNewBooksImage3 from '../../../../assets/images/home/Best-New-Books-3.jpg';
+
 const HomePage = () => {
     return (
         <Fragment>
@@ -59,7 +65,25 @@ const HomePage = () => {
                         
                     </div>
                 </div>
-                <div className="home-right-column"></div>
+                <div className="home-right-column">
+                    <img className="the-booklist-image" src={TheBooklistReaderImage} alt="The Booklist Reader" />
+                    <div className="margin-left-right-5">
+                        <p className="rotd-p"><a className="rotd-title-link font-size-12" href="/">Best New Books: Week of February 5, 2019</a><br />Posted by: Anaiis Rabiela</p>
+                        <img className="best-new-books-image" src={BestNewBooksImage1} alt="Best new books" />
+                        <p className="rotd-p margin-top-5">&#8203;The following books, published this week, received starred reviews in Booklist. Want to read our starred reviews before the books go on sale? Subscribe to Booklist!   Adult Fiction 10,000 Bones, by Joe Ollinger The Atlas of Reds and Blues, by Devi S. Laskar Bowlaway, by Elizabeth McCracken The Colour of Murder, by Julian Symons The Good Ones, by […]</p>
+                        <span className="read-more-link"><a href="/">>>Read More</a></span>
+
+                        <p className="rotd-p"><a className="rotd-title-link font-size-12" href="/">Bookends at #ALAMW19</a><br />Posted by: Cindy Dobrez & Lynn Rutan</p>
+                        <img className="best-new-books-image" src={BestNewBooksImage2} alt="Best new books" />
+                        <p className="rotd-p margin-top-5">&#8203;Cindy & Lynn: We’ve been attending ALA Annual Conferences and Midwinter Meetings regularly since 2000, but we’ve each missed at least one. We were awed to learn that Booklist‘s Editor & Publisher Bill Ott achieved his eightieth straight ALA while in Seattle last week—40 years without missing even one. This one was special as it […]</p>
+                        <span className="read-more-link"><a href="/">>>Read More</a></span>
+
+                        <p className="rotd-p"><a className="rotd-title-link font-size-12" href="/">Books That Would Survive the BIRD BOX Challenge</a><br />Posted by: Eleanor Roth</p>
+                        <img className="best-new-books-image" src={BestNewBooksImage3} alt="Best new books" />
+                        <p className="rotd-p margin-top-5">&#8203;As I was reading about the recently announced 2019 Edgar Award nominees, the blindfolded girl on the cover of Debra Jo Immergut’s debut The Captives immediately brought to mind Josh Malerman’s Bird Box and the recent Netflix adaptation that has sparked all manner of impressions and challenges (don’t Bird Box and drive, people!). I wondered: Is Immergut’s the only […]</p>
+                        <span className="read-more-link"><a href="/">>>Read More</a></span>
+                    </div>
+                </div>
             </div>
         </Fragment>
     );
