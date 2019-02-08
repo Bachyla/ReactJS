@@ -19,6 +19,10 @@
     margin-right: 5px;
 }
 
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
 .read-more-link {
     color: #a94432;
     font-family: Verdana;
@@ -46,7 +50,7 @@
 .main-column .left-border {
     height: 100%;
     padding-right: 3px; 
-    margin-left: -2px;
+    margin-left: -3px;
 }
 /* Online Exclusive Reviews subcomponent START*/
 .oer-main-column {
@@ -59,6 +63,17 @@
     font-size: 14px;
     font-family: Verdana;
     margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.oer-main-title-small {
+    display: block;
+    font-size: 12px;
+    font-family: Verdana;
+    margin-block-start: 3em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -84,8 +99,13 @@
 }
 
 .oer-list {
+    margin: 10px 0 0 0;
     text-align: left;
     list-style-type: none;
+}
+
+.oer-list li {
+    line-height: 0.8rem;
 }
 /* Online Exclusive Reviews subcomponent END*/
 
@@ -99,13 +119,13 @@
 }
 
 .home-left-column {
-    width: 57.3%;
+    width: 57.8%;
     height: 1700px;
     border-right: 1px solid grey;
 }
 
 .home-right-column {
-    width: 42.7%;
+    width: 42.2%;
     height: 1700px;
 }
 
@@ -168,3 +188,13 @@
     margin: 5px 5px 0px 5px;
 }
 /* Latest Article subcomponent END */
+
+
+.book-awards-shell {
+    margin: 30px 13px 25px 25px; 
+}
+
+.awards-image {
+    margin: 15px 0px 15px 10px;
+    float: right;
+}

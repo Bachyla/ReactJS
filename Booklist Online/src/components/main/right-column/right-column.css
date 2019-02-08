@@ -14,7 +14,7 @@
 }
 
 .icon-wrapper{
-    margin: 10px;
+    margin: 4px;
     position: relative;
     background-color: rgb(97, 118, 137);
     line-height: 32px;
@@ -29,13 +29,13 @@
 }
 
 .icon-wrapper img {
-    width: 24px;
-    height: 24px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-top: -36%;
-    margin-left: -38%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35%;
+    margin-left: -35%;
 }
 
 .flex {
@@ -45,4 +45,37 @@
 
 .flex a {
     z-index: 1;
+}
+
+.border-radius-0 {
+    border-radius: 0%;
+}
+
+.f-color {
+    background-color: rgb(59, 89, 152);
+}
+
+.t-color {
+    background-color: rgb(29, 161, 242);
+}
+
+.p-color {
+    background-color: rgb(115, 138, 141);
+}
+
+.m-color {
+    background-color: rgb(132, 132, 132);
+}
+
+.pint-color {
+    background-color: rgb(203, 32, 39);
+}
+
+.share-btns {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.font-size-12 {
+    font-size: 12px;
 }

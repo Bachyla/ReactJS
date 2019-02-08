@@ -3,9 +3,9 @@ import React from 'react';
 
 import './right-column.css';
 
-import facebookIcon from '../../../assets/images/social/facebook.svg';
-import twitterIcon from '../../../assets/images/social/twitter.svg'
-import pinterestIcon from '../../../assets/images/social/pinterest.svg'
+import FacebookIcon from '../../../assets/images/social/facebook.svg';
+import TwitterIcon from '../../../assets/images/social/twitter.svg';
+import PinterestIcon from '../../../assets/images/social/pinterest.svg';
 import Border1 from '../../../assets/images/header-rl-border.gif';
 
 const RightColumn = () => {
@@ -17,17 +17,17 @@ const RightColumn = () => {
                 <div className="flex">
                     <a href="https://www.facebook.com/ALA.Booklist">
                         <div className="icon-wrapper">
-                            <img src={facebookIcon}/>
+                            <img src={FacebookIcon}/>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/ALA.Booklist">
                         <div className="icon-wrapper">
-                            <img src={twitterIcon}/>
+                            <img src={TwitterIcon}/>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/ALA.Booklist">
                         <div className="icon-wrapper">
-                            <img src={pinterestIcon}/>
+                            <img src={PinterestIcon}/>
                         </div>
                     </a>     
                 </div>
