@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import AwardsImage from '../../../../assets/images/book-awards/awards.jpg';
 import FacebookIcon from '../../../../assets/images/social/facebook.svg';
@@ -10,8 +10,7 @@ import PinterestIcon from '../../../../assets/images/social/pinterest.svg';
 
 const BookAwards = () => {
     return (
-        <Fragment>
-            <div className="book-awards-shell">
+            <div className="book-awards-wrapper">
                 <div className="share-btns">
                     <a href="/">
                         <div className="icon-wrapper border-radius-0 f-color">
@@ -137,7 +136,6 @@ const BookAwards = () => {
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Stonewall Honor</a></li>
                 </ul>
             </div>
-        </Fragment>
     );
 };
 
