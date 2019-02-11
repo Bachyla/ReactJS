@@ -14,6 +14,10 @@
     margin-top: 5px;
 }
 
+.margin-top-7 {
+    margin-top: 7px !important;
+}
+
 .margin-left-right-5 {
     margin-left: 5px;
     margin-right: 5px;
@@ -229,4 +233,108 @@
     margin-right: 5px;
 }
 
+.ns-email-input {
+    width: 345px;
+    border-radius: 3px;
+    border-image: initial;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    font-family: SANS-SERIF;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    display: block;
+    height: auto;
+}
+
+.ns-fn-input {
+    width: 160px;
+    height: auto;
+    border-image: initial;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    font-family: SANS-SERIF;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.name-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.ns-ls-input {
+    margin-left: 7px;
+}
+
+.select-wrapper {
+    width: 345px;
+    border-image: initial;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    height: auto;
+}
+
+.dropdown-element {
+    width: 100%;
+    height: 100%;
+    border: 0px inset rgb(156, 156, 156);
+    pointer-events: unset;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    line-height: 24px;
+    font-family: SANS-SERIF;
+    font-weight: normal;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.whitespace {
+    width: 192px;
+}
+
+.submit-btn {
+    margin: 25px auto;
+    display: block;
+    cursor: pointer;
+    width: 122px;
+    height: 52px;
+    word-break: break-all;
+    color: rgb(255, 255, 255);
+    font-family: SANS-SERIF;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 6px;
+    padding: 10px;
+    background-color: rgb(97, 139, 179);
+    font-size: 20px;
+    text-align: center;
+    box-shadow: rgb(153, 153, 153) 2px 2px 2px;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+
+.input-border {
+    border-width: 1px;
+    border-style: inset solid inset inset;
+    border-color: rgb(156, 156, 156);
+}
 /* Newsletter page END */

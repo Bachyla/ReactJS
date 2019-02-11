@@ -147,6 +147,48 @@ export default class Newsletters extends Component {
                                     name="Quick Tips" />
                                     Booklist Delivers (promotions & deals from our partners)
                             </label>
+
+                             <input 
+                                    title="Email"
+                                    placeholder="Email"
+                                    className="ns-email-input input-border" />
+
+                            <div className="name-form">
+                                <input 
+                                        title="First Name"
+                                        placeholder="First Name"
+                                        className="ns-fn-input input-border" />
+
+                                <input 
+                                        title="Last Name"
+                                        placeholder="Last Name"
+                                        className="ns-fn-input ns-ls-input input-border" />
+                            </div>
+
+                            <div className="select-wrapper input-border">
+                                <select className="dropdown-element">
+                                    <option value="no" hidden={true}>Library Type</option>
+                                    <option value="A">School</option>
+                                    <option value="B">Public</option>
+                                    <option value="C">Academic</option>
+                                    <option value="D">State/Gov/Other</option>
+                                    <option value="E">Retired Librarian</option>
+                                    <option value="F">Publisher/verdon</option>
+                                    <option value="G">Bookstore</option>
+                                </select>
+                            </div>
+
+                            <div className="name-form">
+                                <input 
+                                        title="Zip"
+                                        placeholder="Zip"
+                                        className="ns-fn-input ns-ls-input input-border" />
+                                <div className="whitespace"></div>
+                            </div>
+
+                            <button 
+                                className="submit-btn"> Submit
+                            </button>
                         </form>
                     </div>
             </div>
