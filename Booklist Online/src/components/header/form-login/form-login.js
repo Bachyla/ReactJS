@@ -48,7 +48,7 @@ export default class FormLogin extends Component {
                     onChange={this.onPasswordChange} />
 
                     <input
-                    className="submit-input"
+                    className="submit-input" 
                     type="image" 
                     src={SubmitImage} 
                     alt="Submit Form" />
@@ -57,19 +57,18 @@ export default class FormLogin extends Component {
                     <p className="p-small">> Logged-in users can make lists, save searches, e-mail, and more!</p>
                     <p className="p-small">> Try a 
                         <a 
-                            title="Try a free 14-day trial of Booklist Online today!" 
-                            href="*"> free trial </a> 
-                            trial or 
+                            href="*"
+                            title="Try a free 14-day trial of Booklist Online today!">free trial </a> 
+                            or 
                         <a 
-                            title="Subscribe" 
-                            href="*"> subscribe </a> 
+                            href="*"
+                            title="Subscribe"> subscribe </a> 
                             today
                     </p>
                     <p className="margin-bottom-5">
                         <a 
-                        href="*"
-                        name="lnkLostLogin"
-                        title="Forgot your password?">Forgot your password? </a>
+                            href="*"
+                            title="Forgot your password?">Forgot your password? </a>
                     </p>
                 </label>
             </form>
