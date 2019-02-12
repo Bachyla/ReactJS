@@ -337,4 +337,33 @@
     border-style: inset solid inset inset;
     border-color: rgb(156, 156, 156);
 }
+
+.pers-data-title {
+    display: block;
+    padding-bottom: 18px;
+    text-align: left;
+    color: rgb(31, 31, 31);
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: SANS-SERIF;
+}
+
+.pers-data-text {
+    margin-right: 30px;
+    text-align: left;
+    color: rgb(31, 31, 31);
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-family: SANS-SERIF;
+}
+
+.pers-data-link {
+    color: rgb(62, 101, 107);
+    text-decoration: underline;
+    font-size: inherit;
+    font-weight: normal;
+}
 /* Newsletter page END */
