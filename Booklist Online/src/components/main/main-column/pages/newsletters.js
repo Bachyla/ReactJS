@@ -59,7 +59,7 @@ export default class Newsletters extends Component {
 
                     <div className="newsletter-form">
                         <h4 className="newsletter-form-title">Select the newsletters and announcements you'd like to receive:</h4>
-                        <form onSubmit={this.onSubmit}>
+                        <form>
                             <label className="newsletter-label">
                             <input  
                                     className="newsletter-input"
