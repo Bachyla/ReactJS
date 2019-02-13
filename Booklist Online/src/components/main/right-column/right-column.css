@@ -13,31 +13,6 @@
     margin-top: 10px;
 }
 
-.icon-wrapper{
-    margin: 4px;
-    position: relative;
-    background-color: rgb(97, 118, 137);
-    line-height: 32px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-.icon-wrapper:hover {
-    transform: translateY(-4px);
-    transition: all .2s ease-in-out;
-}
-
-.icon-wrapper img {
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -35%;
-    margin-left: -35%;
-}
-
 .flex {
     display: flex;
     justify-content: space-around;
@@ -49,31 +24,6 @@
 
 .border-radius-0 {
     border-radius: 0%;
-}
-
-.f-color {
-    background-color: rgb(59, 89, 152);
-}
-
-.t-color {
-    background-color: rgb(29, 161, 242);
-}
-
-.p-color {
-    background-color: rgb(115, 138, 141);
-}
-
-.m-color {
-    background-color: rgb(132, 132, 132);
-}
-
-.pint-color {
-    background-color: rgb(203, 32, 39);
-}
-
-.share-btns {
-    margin-bottom: 40px;
-    display: flex;
 }
 
 .font-size-12 {

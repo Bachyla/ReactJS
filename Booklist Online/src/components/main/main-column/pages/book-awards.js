@@ -1,47 +1,13 @@
 import React from 'react';
 
-import AwardsImage from '../../../../assets/images/book-awards/awards.jpg';
-import FacebookIcon from '../../../../assets/images/social/facebook.svg';
-import TwitterIcon from '../../../../assets/images/social/twitter.svg';
-import PrinterIcon from '../../../../assets/images/social/print.svg';
-import MailIcon from '../../../../assets/images/social/mail.svg';
-import PinterestIcon from '../../../../assets/images/social/pinterest.svg';
-
+import AwardsImage from '../../../../assets/images/book awards/awards.jpg';
+import ShareButtons from '../../../share-buttons';
 
 const BookAwards = () => {
     return (
             <div className="book-awards-wrapper">
-                <div className="share-btns">
-                    <a href="/">
-                        <div className="icon-wrapper border-radius-0 f-color">
-                            <img alt="Facebook" src={FacebookIcon}/>
-                        </div>
-                    </a>
 
-                    <a href="/">
-                        <div className="icon-wrapper border-radius-0 t-color">
-                            <img alt="Twitter" src={TwitterIcon}/>
-                        </div>
-                    </a>
-
-                    <a href="/">
-                        <div className="icon-wrapper border-radius-0 p-color">
-                            <img alt="Twitter" src={PrinterIcon}/>
-                        </div>
-                    </a>
-
-                    <a href="/">
-                        <div className="icon-wrapper border-radius-0 m-color">
-                            <img alt="Mail" src={MailIcon}/>
-                        </div>
-                    </a>
-
-                    <a href="/">
-                        <div className="icon-wrapper border-radius-0 pint-color">
-                            <img alt="Pinteresr" src={PinterestIcon}/>
-                        </div>
-                    </a>
-                </div>
+                <ShareButtons />
             
                 <h3 className="oer-main-title margin-bottom-15">Book Awards and Media Awards</h3>
                 <span className="oer-span font-size-12">The <a className="oer-span-a font-size-12" href="/" target="_blank" title="">American Library Association</a>, of which <em>Booklist Online</em> is a part, juries some of the most highly regarded book and media awards and honors&nbsp;in the world. Follow the links below to see the most current winners; individual books and media are linked to the <em>Booklist</em> reviews when available. <em>Booklist Online</em> subscribers can view archived awards to 1992 and can also limit advanced searches by award winners</span> <br />

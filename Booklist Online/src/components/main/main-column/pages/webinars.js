@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
+import ShareButtons from '../../../share-buttons/';
 
 const Webinars = () => {
     return (
-        <Fragment>
-            <p>Webinars</p>
-        </Fragment>
+        <div className="book-awards-wrapper">
+            <ShareButtons />
+        </div>
     );
 };
 
