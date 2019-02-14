@@ -2,7 +2,6 @@
 import React from 'react';
 
 import './main.css';
-import Border1 from '../../assets/images/header-rl-border.gif';
 import Border2 from '../../assets/images/header-tb-border.gif';
 
 import LeftColumn from './left-column';
@@ -13,8 +12,7 @@ const Main = () => {
     return (
         <div className="main-container">
             <img src={Border2} className="top-border"/>
-            <img src={Border1} className="left-border"/>
-            <img src={Border1} className="right-border"/>
+
             <div className="flex">
                     <LeftColumn />
                     <MainColumn />

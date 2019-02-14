@@ -2,8 +2,6 @@
 import React, { Component } from 'react';
 
 import './main-column.css';
-import Border1 from '../../../assets/images/header-rl-border.gif';
-
 
 import HomePage from './pages/home-page';
 import OnlineExclusiveReviews from './pages/online-exclusive-reviews';
@@ -18,7 +16,6 @@ export default class MainColumn extends Component {
     render() {
         return (
             <div className="main-column">
-                <img src={Border1} className="left-border"/>
                 <Switch>
                     <Route path="/" exact component={HomePage} />
                     <Route path="/online-exclusive-reviews" exact component={OnlineExclusiveReviews} />

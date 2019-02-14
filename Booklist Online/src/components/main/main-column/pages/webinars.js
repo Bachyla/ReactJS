@@ -6,7 +6,8 @@ import Webinar1 from '../../../../assets/images/webinars/webinar1.jpg';
 import Webinar2 from '../../../../assets/images/webinars/webinar2.jpg';
 import Webinar3 from '../../../../assets/images/webinars/webinar3.jpg';
 import Webinar4 from '../../../../assets/images/webinars/webinar4.jpg';
-import Webinar5 from '../../../../assets/images/webinars/webinar5.jpg'; 
+import Webinar5 from '../../../../assets/images/webinars/webinar5.jpg';
+import Webinar6 from '../../../../assets/images/webinars/webinar6.jpg'; 
 
 const Webinars = () => {
     return (
@@ -44,10 +45,15 @@ const Webinars = () => {
                     <span className="offers-link"><u>Register Now!</u></span>
                 </a>
                 <p className="oer-span font-size-12 webinar-text"><em>Webinar registrants will receive emails from Booklist containing follow-up materials and may receive other follow-up e-mails from sponsors.</em></p>
+
+                <img className="webinar-img" src={Webinar6} alt="Booklist Webinars"></img>
+                <a href="/" target="_blank">
+                    <span className="offers-link"><u>Register Now!</u></span>
+                </a>
+                <p className="oer-span font-size-12 webinar-text"><em>Webinar registrants will receive emails from Booklist containing follow-up materials and may receive other follow-up e-mails from sponsors.</em></p>
             </div>
         </Fragment>
     );
-    
 };
 
 export default Webinars;

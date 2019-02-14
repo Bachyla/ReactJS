@@ -1,4 +1,6 @@
 .left-column {
     width: 180px;
     background-color: rgb(141, 166, 189);
+    border-left: 3px solid #333333;
+    border-right: 3px solid #333333;
 }
