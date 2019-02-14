@@ -397,3 +397,16 @@
     border-bottom: 1px solid grey;
 }
 /* Webinars page END */
+
+/* FAQ page START */
+.faq-wrapper {
+    padding: 25px;
+}
+
+.faq-questions {
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12px;
+
+}
+/* FAQ page END */

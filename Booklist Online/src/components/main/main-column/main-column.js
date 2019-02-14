@@ -8,6 +8,7 @@ import OnlineExclusiveReviews from './pages/online-exclusive-reviews';
 import BookAwards from './pages/book-awards';
 import Newsletters from './pages/newsletters';
 import Webinars from './pages/webinars';
+import Faq from './pages/faq';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ export default class MainColumn extends Component {
                     <Route path="/book-awards" exact component={BookAwards} />
                     <Route path="/newsletters" exact component={Newsletters} />
                     <Route path="/webinars" exact component={Webinars} />
+                    <Route path="/faq" exact component={Faq} />
                 </Switch>
             </div>
         );
