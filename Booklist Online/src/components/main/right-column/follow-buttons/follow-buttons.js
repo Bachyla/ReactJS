@@ -2,9 +2,10 @@ import React from 'react';
 
 import './follow-buttons.css';
 
-import FacebookIcon from '../../assets/images/social/facebook.svg';
-import TwitterIcon from '../../assets/images/social/twitter.svg';
-import PinterestIcon from '../../assets/images/social/pinterest.svg';
+
+import FacebookIcon from '../../../../assets/images/social/facebook.svg';
+import TwitterIcon from '../../../../assets/images/social/twitter.svg';
+import PinterestIcon from '../../../../assets/images/social/pinterest.svg';
 
 const FollowButtons = () => {
     return (

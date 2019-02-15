@@ -2,7 +2,7 @@ import React from 'react';
 
 import './right-column.css';
 
-import FollowButtons from '../../follow-buttons/'
+import FollowButtons from './follow-buttons'
 
 const RightColumn = () => {
     return (
