@@ -42,8 +42,8 @@ const QuickSearch = () => {
                         <option value="D">Media</option>
                         <option value="E">Reference Sources</option>
                     </select>
-                    <a href="/AdvancedSearchReviews.aspx">Go 
-                        to Advanced Search</a>
+                    
+                    <a href="/">Go to Advanced Search</a>
                 </div>
             </form>
         </Fragment>
