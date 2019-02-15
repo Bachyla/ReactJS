@@ -40,6 +40,14 @@ const Faq = () => {
             <p className="faq-questions">Q: What is Book Links?</p>
             <p className="oer-span font-size-12">A: A quarterly supplement to <em>Booklist </em>free to <em>Booklist</em> subscribers, <em>Book Links</em> magazine helps teachers, youth librarians, school library media specialists, reading specialists, curriculum coordinators, and others connect children with high-quality literature-based resources.</p> 
             <p className="oer-span font-size-12"><em>Book Links </em>articles provide comprehensive information on using books in the classroom, including thematic bibliographies with related discussion questions and activities, author and illustrator interviews and essays, and articles by educators on practical ways to turn children onto reading. Published in September, November, January, and April, each <em>Book Links</em> issue focuses on a core curriculum area, including social studies, multicultural literature, language arts, and science.&nbsp;<em>Book Links</em> articles, from October 2009 onward, are available to <em>Booklist </em>subscribers on <em>Booklist Online</em>.</p>
+
+            <p className="faq-questions">Free E-Newsletters</p>
+            <p className="faq-questions">Q: How do I sign up for Booklist Online e-newsletters?</p>
+            <p className="oer-span font-size-12">A: By following <a className="oer-span-a font-size-12" href="/">this link.</a> You can also use that link to modify your e-newsletter preferences.</p> 
+
+            <p className="faq-questions">Free Webinars</p>
+            <p className="faq-questions">Q: How do I register for a free Booklist webinar or view an archived one?</p>
+            <p className="oer-span font-size-12">A: Go to <a className="oer-span-a font-size-12" href="/">www.booklistonline.com/webinars</a> to see what webinars are upcoming and to link to our archive webinar page.</p> 
         </div>
     );
 };

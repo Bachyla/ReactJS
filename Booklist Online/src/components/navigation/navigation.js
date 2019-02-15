@@ -29,7 +29,7 @@ const Navigation = () => {
                 <li>
                     <Link to="/webinars/">WEBINARS</Link>
                 </li>
-                <li className="width-84 pointer">
+                <li className="pointer">
                     <a>
                         MY BOOKLIST
                         <img src={downarrow}/>
@@ -46,7 +46,7 @@ const Navigation = () => {
                         </li>
                     </ul>
                 </li>
-                <li className="width-100 pointer">
+                <li className="pointer">
                     <a>
                         ABOUT US
                         <img src={downarrow}/>
