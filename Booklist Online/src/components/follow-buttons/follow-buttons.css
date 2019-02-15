@@ -1,0 +1,16 @@
+.social-links {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-family: verdana;
+    margin-top: 10px;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.border-radius-0 {
+    border-radius: 0%;
+}

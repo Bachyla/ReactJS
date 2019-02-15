@@ -4,29 +4,3 @@
     border-left: 3px solid #333333;
     border-right: 3px solid #333333;
 }
-
-.social-links {
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    font-family: verdana;
-    margin-top: 10px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-around;
-}
-
-.flex a {
-    z-index: 1;
-}
-
-.border-radius-0 {
-    border-radius: 0%;
-}
-
-.font-size-12 {
-    font-size: 12px;
-}

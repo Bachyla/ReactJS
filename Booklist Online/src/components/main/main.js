@@ -12,11 +12,10 @@ const Main = () => {
     return (
         <div className="main-container">
             <img src={Border2} className="top-border"/>
-
             <div className="flex">
-                    <LeftColumn />
-                    <MainColumn />
-                    <RightColumn />
+                <LeftColumn />
+                <MainColumn />
+                <RightColumn />
             </div>
             <img src={Border2} className="top-border"/>
         </div>
