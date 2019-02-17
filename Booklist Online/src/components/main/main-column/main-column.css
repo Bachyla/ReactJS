@@ -418,3 +418,23 @@
     color: rgb(153, 0, 0);
 }
 /* FAQ page END */
+
+/* Contact US page START */
+.contact-us-title {
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+.contact-us-link {
+    margin: 15px 0 15px 0;
+    color: rgb(153, 0, 0);
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    margin: 12px 0 12px 0;
+}
+
+.representatives-wrapper{
+    margin: 15px 0 15px 0; 
+}
+/* Contact US page END */

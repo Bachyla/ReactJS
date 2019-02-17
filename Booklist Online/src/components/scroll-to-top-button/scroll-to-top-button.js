@@ -18,7 +18,7 @@ scrollToTop() {
 
 render () {
   return (
-    <span title='Back to top' className='oer-span-a font-size-12 to-top-button' onClick={ () => { this.scrollToTop(); }}>
+    <span title='Back to top' className='oer-span-a font-size-12 to-top-button' onClick={() => { this.scrollToTop()}}>
     <u>«Back to Top»</u></span>
     );
   }
