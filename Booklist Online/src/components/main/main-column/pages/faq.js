@@ -50,7 +50,7 @@ const Faq = () => {
             <p className="faq-questions">Q: How do I register for a free Booklist webinar or view an archived one?</p>
             <p className="oer-span font-size-12">A: Go to <a className="oer-span-a font-size-12" href="/">www.booklistonline.com/webinars</a> to see what webinars are upcoming and to link to our archive webinar page.</p> 
 
-            <ScrollToTopButton />
+            <ScrollToTopButton scrollStepInPx="50" delayInMs="16.66" />
         </div>
     );
 };

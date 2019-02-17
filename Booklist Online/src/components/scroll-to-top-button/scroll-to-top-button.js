@@ -1,31 +1,28 @@
-// import React, { useState } from 'react';
+import React from 'react';
 
-// const ScrollToTopButton = () => {
-//     const [intervalId, scrollStep] = useState(0);
-//     return (
-//         <div>
-//             <h1>{intervalId}</h1>
-//             <button onClick={() => scrollStep(intervalId + 1)}>«Back to Top» </button>
-//         </div>
-//     );
-// };
+import './scroll-to-top-button.css';
 
-// export default ScrollToTopButton;
+class ScrollToTopButton extends React.Component {
+  state = {
+      intervalId: 0
+  };
 
-import React, { useState } from 'react';
-
-function ScrollToTopButton() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
+scrollStep() {
+  window.pageYOffset === 0 ? clearInterval(this.state.intervalId) : window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
 }
+
+scrollToTop() {
+  let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+  this.setState({ intervalId: intervalId });
+}
+
+render () {
+  return (
+    <span title='Back to top' className='oer-span-a font-size-12 to-top-button' onClick={ () => { this.scrollToTop(); }}>
+    <u>«Back to Top»</u></span>
+    );
+  }
+} 
 
 export default ScrollToTopButton;
 
