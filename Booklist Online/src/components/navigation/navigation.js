@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import downarrow from '../../assets/images/downarrow.png'
@@ -9,7 +9,6 @@ import './navigation.css';
 
 const Navigation = () => {
     return (
-        <Fragment>
             <ul className="navigation">
                 <li>
                     <Link to="/">HOME</Link>
@@ -82,7 +81,6 @@ const Navigation = () => {
                     <Link to="/subscribe-renew/">SUBSCRIBE/RENEW</Link>
                 </li>
             </ul>
-        </Fragment>
     );
 };
 
