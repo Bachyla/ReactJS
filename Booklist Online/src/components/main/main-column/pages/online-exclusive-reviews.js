@@ -6,7 +6,7 @@ const OnlineExclusiveReviews = () => {
     return (
             <div className="oer-main-column">
                 <h3 className="oer-main-title">Read <i>Booklist Online Exclusive</i> Reviews</h3>
-                <img className="oer-main-image" src={HeaderImage} alt="Header"/>
+                <img src={HeaderImage} alt="Header" width="564" height="100"/>
                 <span className="oer-span">Each year, <i>Booklist</i> publishes more than 2,000 <i>Booklist Online Exclusive</i> reviews, which we offer free to subscribers and nonsubscribers alike. Follow the links below to find web-only reviews published during the last 30 days. To have a monthly, hand-picked selection of BOLE reviews delivered to your inbox, <a className="oer-span-a" href="/newsletters">click here to sign up for our free <i>Booklist Online Exclusives</i> newsletter</a>. It’s like an extra issue of <i>Booklist</i>!</span>
 
                 <h3 className="oer-main-title font-size-13">Find Reviews</h3>

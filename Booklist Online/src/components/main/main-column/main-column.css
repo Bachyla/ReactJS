@@ -79,11 +79,6 @@
     font-weight: bold;
 }
 
-.oer-main-image {
-    width: 564px;
-    height: 100px;
-}
-
 .oer-span {
     display: block;
     font-size: 13px;
@@ -363,14 +358,10 @@
 
 /* Webinars page START */
 .webinars-main-image {
-    height: 133px;
-    width: 460px;
     margin-bottom: 30px;
 }
 
 .webinar-img {
-    width: 430px;
-    height: 200px;
     display: block;
     margin: 0 auto;
 }

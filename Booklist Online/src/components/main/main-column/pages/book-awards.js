@@ -20,7 +20,7 @@ const BookAwards = () => {
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Andrew Carnegie Medal for Excellence in Nonfiction</a></li>
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Andrew Carnegie Medal for Excellence in Fiction Finalists</a></li>
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Andrew Carnegie Medal for Excellence in Nonfiction Finalists</a></li>
-                    <img className="awards-image" alt="Awards" src={AwardsImage}/>
+                    <img src={AwardsImage} className="awards-image" alt="Awards" width="213" height="757"/>
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Booklist Top of the List</a></li>
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Booklist Editors' Choice: Adult Books</a></li>
                     <li><a className="oer-span-a font-size-12" href="/" target="_blank">Dartmouth Medal</a></li>

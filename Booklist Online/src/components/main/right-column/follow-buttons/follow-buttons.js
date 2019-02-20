@@ -14,17 +14,17 @@ const FollowButtons = () => {
                 <div className="inline-flex">
                     <a href="https://www.facebook.com/ALA.Booklist">
                         <div className="icon-wrapper">
-                            <img alt="Facebook" src={FacebookIcon}/>
+                            <img src={FacebookIcon} alt="Facebook" width="22" height="22"/>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/ALA.Booklist">
                         <div className="icon-wrapper">
-                            <img alt="Twitter" src={TwitterIcon}/>
+                            <img src={TwitterIcon} alt="Twitter" width="22" height="22"/>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/ALA.Booklist">
                         <div className="icon-wrapper">
-                            <img alt="Pinterest" src={PinterestIcon}/>
+                            <img src={PinterestIcon} alt="Pinterest" width="22" height="22"/>
                         </div>
                     </a>     
                 </div>

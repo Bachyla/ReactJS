@@ -10,12 +10,16 @@ const Issues = () => {
     return (
         <Fragment>
             <img 
-                src={IssuesTitle} 
-                alt="Quick Search Title"/>
+                src={IssuesTitle}         
+                alt="Quick Search Title"
+                width="180"
+                height="25"/>
             <img 
                 className="issue-image"
                 src={IssueImage} 
-                alt="Issue Image"/>
+                alt="Issue Image"
+                width="150"
+                height="200"/>
             <div className="issue-list">
                 <h3>February 1, 2019 </h3>
                 <h3 className="margin-bottom-10">BOOKLIST</h3>

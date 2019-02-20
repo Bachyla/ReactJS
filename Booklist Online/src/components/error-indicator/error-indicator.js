@@ -6,7 +6,7 @@ import icon from '../../assets/images/logo.gif';
 const ErrorIndicator = () => {
   return (
     <div className="error-indicator">
-      <img src={icon} alt="error icon"/>
+      <img src={icon} width="275" height="90" alt="error icon"/>
       <span className="boom">BOOM!</span>
       <span className="boom">
         something has gone terribly wrong

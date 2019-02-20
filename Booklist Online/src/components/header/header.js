@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className="header">
             <img src={border2} className="top-border"/>
-            <img src={icon} className="logo" alt="Logo icon"/>
+            <img src={icon} className="logo" alt="Logo icon" width="275" height="90"/>
             <img src={border1} className="left-border"/>
             <img src={border1} className="right-border"/>  
             <FormLogin />

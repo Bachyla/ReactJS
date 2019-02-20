@@ -12,7 +12,7 @@ export default class Newsletters extends Component {
                 <ShareButtons />
 
                 <h3 className="oer-main-title margin-bottom-15">Booklist Online Newsletters</h3>
-                <img alt="Newsletters" src={NewslettersImage}/>
+                <img src={NewslettersImage} alt="Newsletters" width="532" height="69"/>
                 <p className="oer-span font-size-12">Fill out the form below to receive free newsletters and announcements from <em>Booklist,&nbsp;</em><em>Booklist Online,&nbsp;</em>and <em>The&nbsp;Booklist Reader</em>. (For longer descriptions, visit each newsletter's archive page.)&nbsp;</p>
                 <br />
                 <p className="oer-span font-size-12">To see past issues, browse our archives:&nbsp;

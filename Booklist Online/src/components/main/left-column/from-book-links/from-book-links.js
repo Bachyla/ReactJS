@@ -10,12 +10,16 @@ const FromBookLinks = () => {
     return(
         <Fragment>
             <img 
-                src={FBLTitle} 
-                alt="Quick Search Title"/>
+                src={FBLTitle}     
+                alt="Quick Search Title"
+                width="180"
+                height="25"/>
             <img 
+                src={Poster}                 
                 className="issue-image"
-                src={Poster} 
-                alt="Issue Image"/>
+                alt="Issue Image"
+                width="150"
+                height="200"/>
             <h3 className="main-title">February 1, 2019 </h3>
             <a  className="font-size-10 link"
                     href="*">January 2019 Issue</a>

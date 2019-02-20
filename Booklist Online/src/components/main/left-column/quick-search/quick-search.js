@@ -9,8 +9,10 @@ const QuickSearch = () => {
     return (
         <Fragment>
             <img 
-                src={QSTitle} 
-                alt="Quick Search Title"/>
+                src={QSTitle}                 
+                alt="Quick Search Title"
+                width="180"
+                height="25"/>
             <form>
                 <div className="main-search-input">
                     <input 

@@ -13,31 +13,31 @@ const ShareButtons = () => {
             <div className="share-btns">
                     <a href="/">
                         <div className="icon-wrapper border-radius-0 f-color">
-                            <img alt="Facebook" src={FacebookIcon}/>
+                            <img src={FacebookIcon} alt="Facebook" width="22" height="22"/>
                         </div>
                     </a>
 
                     <a href="/">
                         <div className="icon-wrapper border-radius-0 t-color">
-                            <img alt="Twitter" src={TwitterIcon}/>
+                            <img src={TwitterIcon} alt="Twitter" width="22" height="22"/>
                         </div>
                     </a>
 
                     <a href="/">
                         <div className="icon-wrapper border-radius-0 p-color">
-                            <img alt="Twitter" src={PrinterIcon}/>
+                            <img src={PrinterIcon} alt="Twitter" width="22" height="22"/>
                         </div>
                     </a>
 
                     <a href="/">
                         <div className="icon-wrapper border-radius-0 m-color">
-                            <img alt="Mail" src={MailIcon}/>
+                            <img src={MailIcon} alt="Mail" width="22" height="22"/>
                         </div>
                     </a>
 
                     <a href="/">
                         <div className="icon-wrapper border-radius-0 pint-color">
-                            <img alt="Pinteresr" src={PinterestIcon}/>
+                            <img src={PinterestIcon} alt="Pinteresr" width="22" height="22"/>
                         </div>
                     </a>
             </div>

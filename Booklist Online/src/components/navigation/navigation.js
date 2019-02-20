@@ -31,7 +31,7 @@ const Navigation = () => {
                 <li className="pointer">
                     <a>
                         MY BOOKLIST
-                        <img src={downarrow}/>
+                        <img src={downarrow} width="10" height="8"/>
                     </a>
                     <ul className="submenu">
                         <li>
@@ -48,7 +48,7 @@ const Navigation = () => {
                 <li className="pointer">
                     <a>
                         ABOUT US
-                        <img src={downarrow}/>
+                        <img src={downarrow} width="10" height="8"/>
                     </a>
                     <ul className="submenu">
                         <li>
