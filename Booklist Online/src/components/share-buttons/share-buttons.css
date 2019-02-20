@@ -1,6 +1,6 @@
-.share-btns {
-    margin-bottom: 30px;
+.share-buttons-wrapper {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .icon-wrapper{
@@ -26,22 +26,22 @@
     margin-left: -35%;
 }
 
-.f-color {
+.facebook-color {
     background-color: rgb(59, 89, 152);
 }
 
-.t-color {
+.twitter-color {
     background-color: rgb(29, 161, 242);
 }
 
-.p-color {
+.print-color {
     background-color: rgb(115, 138, 141);
 }
 
-.m-color {
+.mail-color {
     background-color: rgb(132, 132, 132);
 }
 
-.pint-color {
+.pinterest-color {
     background-color: rgb(203, 32, 39);
 }

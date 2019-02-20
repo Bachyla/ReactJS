@@ -1,6 +1,6 @@
 .search-input {
-    width: 119px;
     display: block;
+    width: 119px;
     margin-bottom: 10px;
 }
 
@@ -23,8 +23,8 @@
 }
 
 .search-parameters select {
-    width: 148px;
     display: block;
+    width: 148px;
     margin: 3px auto;
 }
 
