@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Fragment } from 'react';
 
 import './issues.css';
@@ -17,7 +16,7 @@ const Issues = () => {
             <img 
                 className="issue-image"
                 src={IssueImage} 
-                alt="Issue Image"
+                alt="Issue"
                 width="150"
                 height="200"/>
             <div className="issue-list">

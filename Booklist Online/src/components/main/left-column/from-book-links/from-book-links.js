@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
+
 import React, { Fragment } from 'react';
 
 import './from-book-links.css';
@@ -17,7 +17,7 @@ const FromBookLinks = () => {
             <img 
                 src={Poster}                 
                 className="issue-image"
-                alt="Issue Image"
+                alt="Issue"
                 width="150"
                 height="200"/>
             <h3 className="main-title">February 1, 2019 </h3>

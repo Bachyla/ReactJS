@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -29,9 +27,9 @@ const Navigation = () => {
                     <Link to="/webinars/">WEBINARS</Link>
                 </li>
                 <li className="pointer">
-                    <a>
+                    <a href="/">
                         MY BOOKLIST
-                        <img src={downarrow} width="10" height="8"/>
+                        <img src={downarrow} width="10" height="8" alt=""/>
                     </a>
                     <ul className="submenu">
                         <li>
@@ -46,9 +44,9 @@ const Navigation = () => {
                     </ul>
                 </li>
                 <li className="pointer">
-                    <a>
+                    <a href="/">
                         ABOUT US
-                        <img src={downarrow} width="10" height="8"/>
+                        <img src={downarrow} width="10" height="8" alt=""/>
                     </a>
                     <ul className="submenu">
                         <li>

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
 
 import NewslettersImage from '../../../../assets/images/newsletters.jpg'
@@ -135,7 +134,7 @@ export default class Newsletters extends Component {
 
                         <div className="select-wrapper input-border">
                             <select className="dropdown-element">
-                                <option value="no" hidden={true}>Library Type</option>
+                                <option value="no" hidden>Library Type</option>
                                 <option value="A">School</option>
                                 <option value="B">Public</option>
                                 <option value="C">Academic</option>

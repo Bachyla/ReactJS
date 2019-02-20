@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
 import './main.css';
@@ -11,13 +10,13 @@ import RightColumn from './right-column';
 const Main = () => {
     return (
         <div className="main-container">
-            <img src={Border2} className="top-border"/>
+            <img src={Border2} className="top-border" alt=""/>
             <div className="flex">
                 <LeftColumn />
                 <MainColumn />
                 <RightColumn />
             </div>
-            <img src={Border2} className="top-border"/>
+            <img src={Border2} className="top-border" alt=""/>
         </div>
     )
 }
