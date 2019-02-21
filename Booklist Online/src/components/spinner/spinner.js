@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 
 import './spinner.css';
 
-const Spinner = () => {
-  return (
-    <div className="lds-css">
-      <div className="lds-double-ring">
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  );
-};
+class Spinner extends Component {
+  render() {
+    const {isLoading} = this.props;
+
+    return (
+      <Fragment>
+        {
+          isLoading ? 
+          <div className="spinner-wrapper">
+            <div className="spinner">
+              <div></div>
+              <div></div>
+            </div>
+          </div> :
+          this.props.children
+        }
+      </Fragment>
+    )
+  }
+}
 
 export default Spinner;
