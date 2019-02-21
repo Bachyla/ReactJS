@@ -5,15 +5,30 @@ import Header from '../header';
 import Navigation from '../navigation';
 import Main from '../main';
 import Footer from '../footer';
+import Spinner from '../spinner';
 
 import './app.css';
 
 import {BrowserRouter as Router} from 'react-router-dom';
 
 export default class App extends Component {
+  state = {
+    isLoading: true,
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        isLoading: false,
+      })
+    }, 1000)
+  }
+
   render() {
+    const { isLoading } = this.state;
     return (
       <ErrorBoundry>
+      <Spinner isLoading={isLoading}>
       <Router>
         <Fragment>
           <Header />
@@ -23,6 +38,7 @@ export default class App extends Component {
           <Footer />
         </Fragment>
       </Router>
+    </Spinner>
     </ErrorBoundry>
     );
   }
