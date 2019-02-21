@@ -1,3 +1,7 @@
+.block {
+    display: block;
+}
+
 .font-size-13 {
     font-size: 13px !important;
 }
