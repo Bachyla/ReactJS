@@ -376,20 +376,20 @@
     flex-direction: column;
 }
 
-.offers-link {
-    font-size: 22px;
-    font-family: SANS-SERIF;
-    color: rgb(153, 0, 0);
-    display: block;
-    text-align: center;
-}
-
 .webinar-text {
     padding: 7px;
     margin: 20px;
     text-align: center;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+}
+
+.offers-link {
+    font-size: 22px;
+    font-family: SANS-SERIF;
+    color: rgb(153, 0, 0);
+    display: block;
+    text-align: center;
 }
 /* Webinars page END */
 
@@ -433,3 +433,13 @@
     margin: 15px 0 15px 0; 
 }
 /* Contact US page END */
+/* Right Column component START */
+.rc-adverting-img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+/* Right Column component END */
+
