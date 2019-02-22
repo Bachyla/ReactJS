@@ -10,6 +10,9 @@ import Webinars from './pages/webinars';
 import Faq from './pages/faq';
 import Help from './pages/help';
 import ContactUs from './pages/contact-us';
+import SearchReviews from './pages/search-reviews';
+import SearchFeatures from './pages/search-features';
+import SavedSearches from './pages/saved-searches';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -27,6 +30,9 @@ export default class MainColumn extends Component {
                     <Route path="/faq" exact component={Faq} />
                     <Route path="/help" exact component={Help} />
                     <Route path="/contact-us" exact component={ContactUs} />
+                    <Route path="/search-reviews" exact component={SearchReviews} />
+                    <Route path="/search-features" exact component={SearchFeatures} />
+                    <Route path="/saved-searches" exact component={SavedSearches} />
                 </Switch>
             </div>
         );

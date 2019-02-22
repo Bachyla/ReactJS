@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 19px;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    border-bottom: 2px solid black;
+}
+
+.tabs {
+    margin-bottom: -4px;
+}

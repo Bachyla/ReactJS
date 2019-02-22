@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 import './quick-search.css';
 
@@ -45,7 +46,7 @@ const QuickSearch = () => {
                         <option value="E">Reference Sources</option>
                     </select>
                     
-                    <a href="/">Go to Advanced Search</a>
+                    <Link to="/search-reviews/">Go to Advanced Search</Link>
                 </div>
             </form>
         </Fragment>
