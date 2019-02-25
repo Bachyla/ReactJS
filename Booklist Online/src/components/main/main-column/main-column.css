@@ -2,9 +2,18 @@
     display: block;
 }
 
+.fill-available {
+    width: -webkit-fill-available;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .font-size-13 {
@@ -44,19 +53,23 @@
     margin-bottom: 15px;
 }
 
+.margin-bottom-7 {
+    margin-bottom: 7px;
+}
+
 .read-more-link {
-    color: #a94432;
     font-family: Verdana;
     font-weight: bold;
     cursor: pointer;
+    color: #a94432;
 }
 
 .read-more-link a {
-    color: #a94432;
-    font-size: 10px;
     display: flex;
+    font-size: 10px;
     justify-content: flex-end;
     margin-bottom: 30px;
+    color: #a94432;
 }
 
 .main-column {
@@ -212,11 +225,11 @@
 }
 
 .newsletter-form-title {
-    color: rgb(51, 51, 51);
     font-family: SANS-SERIF;
     font-weight: 500;
     font-size: 16px;
     word-wrap: break-word;
+    color: rgb(51, 51, 51);
     min-height: 30px;
 }
 
@@ -314,19 +327,19 @@
 }
 
 .submit-btn {
-    margin: 25px auto;
     display: block;
+    font-family: SANS-SERIF;
+    font-size: 20px;
+    word-break: break-all;
     cursor: pointer;
+    margin: 25px auto;
     width: 122px;
     height: 52px;
-    word-break: break-all;
     color: rgb(255, 255, 255);
-    font-family: SANS-SERIF;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 6px;
     padding: 10px;
     background-color: rgb(97, 139, 179);
-    font-size: 20px;
     text-align: center;
     box-shadow: rgb(153, 153, 153) 2px 2px 2px;
     letter-spacing: 0px;
@@ -452,13 +465,13 @@
 /* Right Column component END */
 /* Search Review page START */
 .annotation {
-    FONT-SIZE: 10px;
-    FONT-FAMILY: Verdana;
+    font-size: 10px;
+    font-family: Verdana;
     font-weight: normal;
 }
 
 .search-wrapper {
-    padding: 2.5px 70px 2.5px 70px;
+    padding: 2.5px 70px 100px 70px;
 }
 
 .search-buttons-wrapper {
@@ -511,10 +524,15 @@
 }
 
 .clear-form-button {
-    FONT-WEIGHT: bold;
-    FONT-SIZE: 11px;
-    COLOR: #8f4235;
+    font-weight: bold;
+    font-size: 11px;
+    color: #8f4235;
     cursor: pointer;
+}
+
+.search-checkbox {
+    display: inline-flex;
+    margin-right: 10px;
 }
 /* Search Review page END */
 

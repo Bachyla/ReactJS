@@ -11,13 +11,13 @@ class SearchReviews extends Component {
         isLoading : false,
     }
 
-    // componentDidMount() {
-    //     setTimeout(() => {
-    //         this.setState({
-    //             isLoading: false,
-    //         })
-    //     }, 1000);
-    // }
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                isLoading: false,
+            })
+        }, 1000);
+    }
 
     render() {
         const { isLoading } = this.state;
@@ -42,6 +42,7 @@ class SearchReviews extends Component {
             
                     <h3 className="search-title">Advanced Search Reviews</h3>
                     <form>
+
                         <div className="form-flex">
                             <div>
                                 <span className="search-lable block">Search On:</span>
@@ -83,7 +84,6 @@ class SearchReviews extends Component {
                                         <option value="J">ISBN</option>
                                     </select>
                                     <select className="search-for-select">
-                                    <select className="search-for-select">
                                         <option value="A">Keyword in title</option> 
                                         <option value="B">Author/Editor</option>
                                         <option value="C">Illustrator</option>
@@ -95,6 +95,7 @@ class SearchReviews extends Component {
                                         <option value="I">Reviewer Name</option>
                                         <option value="J">ISBN</option>
                                     </select>
+                                    <select className="search-for-select">
                                         <option value="A">Keyword in title</option> 
                                         <option value="B">Author/Editor</option>
                                         <option value="C">Illustrator</option>
@@ -166,6 +167,7 @@ class SearchReviews extends Component {
                                 </div>
                             </div>
                         </div>
+
                         <div className="form-flex">
                             <div>
                                 <span className="search-lable block">Booklist Taxonomy: <span className="annotation">(Use CTRL key to multiselect)</span></span>
@@ -400,6 +402,7 @@ class SearchReviews extends Component {
                                 <a href="/" onClick={(e) => e.preventDefault()} className="clear-form-button"><u>[Clear Taxonomy]</u></a>
                             </div>
                         </div>
+
                         <div className="form-flex">
                             <div>
                             <span className="search-lable block">Booklist Print Issue / Booklist Online Publication Date:</span>
@@ -516,6 +519,313 @@ class SearchReviews extends Component {
                                 </select>
                             </div>
                         </div>
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block">Audience/Format: <span className="annotation">(Use CTRL key to multiselect)</span></span>
+                                <div className="flex-column">
+                                    <select size="3" multiple="multiple">
+                                        <option value="0">All</option>
+                                        <option value="1">Adult Books</option>
+                                        <option value="2">Books for Youth</option>
+                                        <option value="3">Video &amp; DVD</option>
+                                        <option value="4">Audio for Adults</option>
+                                        <option value="5">Audio for Youth</option>
+                                        <option value="6">Reference</option>
+                                        <option value="7">Internet Resources</option>
+                                    </select>
+                                    <a href="/" onClick={(e) => e.preventDefault()} className="clear-form-button"><u>[Clear Audience/Format]</u></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block">Dewey Range:</span>
+                                <input
+                                        className="search-for-input" 
+                                        type="text" 
+                                        name="text"/>
+
+                                <span className="search-lable margin-left-right-5">to</span>
+
+                                <input
+                                        className="search-for-input" 
+                                        type="text" 
+                                        name="text"/>
+                            </div>
+                        </div> 
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block">Grade Range:</span>
+                                <select>
+                                    <option value="-2">All</option>
+                                    <option value="-1">Preschool</option>
+                                    <option value="0">Kindergarden</option>
+                                    <option value="1">1st Grade</option>
+                                    <option value="2">2nd Grade</option>
+                                    <option value="3">3rd Grade</option>
+                                    <option value="4">4th Grade</option>
+                                    <option value="5">5th Grade</option>
+                                    <option value="6">6th Grade</option>
+                                    <option value="7">7th Grade</option>
+                                    <option value="8">8th Grade</option>
+                                    <option value="9">9th Grade</option>
+                                    <option value="10">10th Grade</option>
+                                    <option value="11">11th Grade</option>
+                                    <option value="12">12th Grade</option>
+                                </select>
+                                <span className="search-lable margin-left-right-5">to</span>
+                                <select>
+                                    <option value="-2">All</option>
+                                    <option value="-1">Preschool</option>
+                                    <option value="0">Kindergarden</option>
+                                    <option value="1">1st Grade</option>
+                                    <option value="2">2nd Grade</option>
+                                    <option value="3">3rd Grade</option>
+                                    <option value="4">4th Grade</option>
+                                    <option value="5">5th Grade</option>
+                                    <option value="6">6th Grade</option>
+                                    <option value="7">7th Grade</option>
+                                    <option value="8">8th Grade</option>
+                                    <option value="9">9th Grade</option>
+                                    <option value="10">10th Grade</option>
+                                    <option value="11">11th Grade</option>
+                                    <option value="12">12th Grade</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block">Publication Date:</span>                  
+                                <select>
+                                    <option value="00">All</option>
+                                    <option value="01">Jan</option>
+                                    <option value="02">Feb</option>
+                                    <option value="03">Mar</option>
+                                    <option value="04">Apr</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">Aug</option>
+                                    <option value="09">Sept</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                                <select className="margin-left-right-5">
+                                    <option value="0000">All</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                </select>
+
+                                <span className="search-lable margin-left-right-5">to</span>
+                                
+                                <select className="margin-left-right-5">
+                                    <option value="00">All</option>
+                                    <option value="01">Jan</option>
+                                    <option value="02">Feb</option>
+                                    <option value="03">Mar</option>
+                                    <option value="04">Apr</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">Aug</option>
+                                    <option value="09">Sept</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                                <select>
+                                    <option value="0000">All</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block">Fiction/Nonfiction:</span>
+                                <select size="3" multiple="multiple" className="fill-available">
+                                    <option value="0">All</option>
+                                    <option value="1">Fiction</option>
+                                    <option value="2">Nonfiction</option>
+                                </select> 
+                            </div>
+                        </div>
+
+                        <div className="flex-column">
+                            <span className="search-lable block margin-bottom-7">Limit Search to:</span>
+                            <div className="margin-bottom-7">
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        Starred Reviews</span>
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        Online-Only Reviews</span>
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        Adult Book Recommended for Young Adults</span>
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        First Novels</span>
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        Picture Books</span>
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        Easy Readers</span>
+                                <span className="flex-row annotation"><input 
+                                        className="search-checkbox"
+                                        type="checkbox" 
+                                        name="username" />
+                                        E-books</span>
+                            </div>
+                        </div>
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block">Awards: <span className="annotation">(Use CTRL key to multiselect)</span></span>
+                                <div className="flex-column">
+                                    <select className="taxonomy-select" size="11" multiple="multiple">
+                                        <option value="1">Booklist Top of the List</option>
+                                        <option value="2">Booklist Editors’ Choice</option>
+                                        <option value="3">Newbery Medal</option>
+                                        <option value="4">Newbery Honor</option>
+                                        <option value="5">Caldecott Medal</option>
+                                        <option value="6">Caldecott Honor</option>
+                                        <option value="7">Printz Award</option>
+                                        <option value="8">Printz Honor</option>
+                                        <option value="28">Odyssey Award</option>
+                                        <option value="29">Odyssey Honor</option>
+                                        <option value="33">Morris Award</option>
+                                        <option value="34">Morris Honor</option>
+                                        <option value="9">Sibert Medal</option>
+                                        <option value="10">Sibert Honor</option>
+                                        <option value="35">Dartmouth Award</option>
+                                        <option value="36">Dartmouth Honor</option>
+                                        <option value="11">Coretta Scott King Award</option>
+                                        <option value="12">Coretta Scott King Honor</option>
+                                        <option value="22">Pura Belpre Award</option>
+                                        <option value="23">Pura Belpre Honor</option>
+                                        <option value="24">Stonewall Award</option>
+                                        <option value="25">Stonewall Honor</option>
+                                        <option value="13">Notable Books</option>
+                                        <option value="26">The Reading List</option>
+                                        <option value="14">Notable Children’s Books</option>
+                                        <option value="27">Amelia Bloomer</option>
+                                        <option value="21">Carnegie Medal</option>
+                                        <option value="20">Notable Media</option>
+                                        <option value="15">Best Books for Young Adults</option>
+                                        <option value="40">Best Fiction for Young Adults</option>
+                                        <option value="16">Alex Awards</option>
+                                        <option value="37">YALSA Award for Excellence in Nonfiction</option>
+                                        <option value="38">YALSA Award for Excellence in Nonfiction Finalists</option>
+                                        <option value="30">Rainbow List</option>
+                                        <option value="41">Over the Rainbow List</option>
+                                        <option value="31">Great Graphic Novels for Teens</option>
+                                        <option value="32">Quick Picks</option>
+                                        <option value="17">National Book Award</option>
+                                        <option value="18">National Book Critics Circle Award</option>
+                                        <option value="19">Pulitzer Prize</option>
+                                        <option value="39">Booker Prize</option>
+                                        <option value="42">Andrew Carnegie Medal for Excellence in Fiction Finalist</option>
+                                        <option value="43">Andrew Carnegie Medal for Excellence in Nonfiction Finalist</option>
+                                        <option value="44">Andrew Carnegie Medal for Excellence in Fiction</option>
+                                        <option value="45">Andrew Carnegie Medal for Excellence in Nonfiction</option>
+                                        <option value="47">American Indian Youth Literature Award</option>
+                                        <option value="48">Asian/Pacific American Award for Literature</option>
+                                        <option value="49">Mildred L. Batchelder Award and Honor</option>
+                                        <option value="50">Schneider Family Book Award and Honor</option>
+                                        <option value="51">Sydney Taylor Book Award</option>
+                                        <option value="52">American Indian Youth Literature Honor</option>
+                                        <option value="53">Asian/Pacific American Honor for Literature</option>
+                                        <option value="54">Sydney Taylor Book Honor</option>
+                                    </select>
+                                </div>
+                                <a href="/" onClick={(e) => e.preventDefault()} className="clear-form-button"><u>[Clear Awards]</u></a>
+                            </div>
+                        </div>
+
+                        <div className="form-flex">
+                            <div>
+                                <span className="search-lable block margin-bottom-7">Default Sort Order:</span>
+                                <div className="flex-column">
+                                    <select>
+                                        <option value="0">Date</option>
+                                        <option value="1">Title</option>
+                                        <option value="2">Author</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                     <div className="search-buttons-wrapper">
                         <a href="/"><img 
@@ -530,6 +840,9 @@ class SearchReviews extends Component {
                             className="search-buttons"
                             width="95"
                             height="25"/></a>
+                    </div>
+                    <div className="search-buttons-wrapper">
+                    <a href="/" onClick={(e) => e.preventDefault()} className="clear-form-button"><u>Give Us Feedback about Advanced Search</u></a>
                     </div>
                 </div>
             </Spinner>
