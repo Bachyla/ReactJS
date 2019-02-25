@@ -2,6 +2,11 @@
     display: block;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .font-size-13 {
     font-size: 13px !important;
 }
@@ -20,6 +25,10 @@
 
 .margin-top-7 {
     margin-top: 7px !important;
+}
+
+.margin-top-12 {
+    margin-top: 12px !important;
 }
 
 .margin-left-right-5 {
@@ -421,12 +430,11 @@
 }
 
 .contact-us-link {
-    margin: 15px 0 15px 0;
-    color: rgb(153, 0, 0);
-    font-size: 12px;
-    font-weight: normal;
     display: block;
     margin: 12px 0 12px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(153, 0, 0);
 }
 
 .representatives-wrapper{
@@ -435,11 +443,61 @@
 /* Contact US page END */
 /* Right Column component START */
 .rc-adverting-img {
+    display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: block;
     margin: 0 auto;
 
 }
 /* Right Column component END */
+/* Search Review page START */
+.search-wrapper {
+    padding: 2.5px 70px 2.5px 70px;
+}
+
+.search-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.search-buttons {
+    margin: 5px 3px 20px 3px;
+}
+
+.search-title {
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #883628;
+}
+
+.search-lable {
+    display: block;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.search-for-input {
+    width: 93px;
+    height: 13px;
+    margin: 1px 2px 0 2px;
+}
+
+.search-for-select {
+    width: 200px;
+    margin: 1px 2px 1px 2px;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.and-or-select {
+    width: 50px;
+    margin: 1px 2px 1px 2px;
+}
+/* Search Review page END */
 
