@@ -2,7 +2,6 @@ import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseUrl';
 
 export const fetchComments = () => (dispatch) => {
-    console.info(baseUrl + 'cooments');
     return fetch(baseUrl + 'comments')
     .then(response => {
         if (response.ok) {
@@ -26,12 +25,6 @@ export const commentsFailed = (errmess) => ({
     type: ActionTypes.COMMENTS_FAILED,
     payload: errmess
 });
-
-export const postComment = (comments)  => (dispatch) => {
-  setTimeout(() => {
-    dispatch(addComments(comments));
-  }, 1000);
-};
 
 export const addComments = (comments) => ({
     type: ActionTypes.ADD_COMMENTS,
@@ -149,18 +142,36 @@ export const addLeaders = (leaders) => ({
     payload: leaders
 });
 
-export const postFavourite = (dishId)  => (dispatch) => {
-  setTimeout(() => {
-    dispatch(addFavourite(dishId));
-  }, 1000);
+export const postFavorite = (dishId)  => (dispatch) => {
+
+    setTimeout(() => {
+        dispatch(addFavorite(dishId));
+    }, 2000);
 };
 
-export const addFavourite = (dishId) => ({
-  type: ActionTypes.ADD_FAVOURITE,
-  payload: dishId
+
+export const addFavorite = (dishId) => ({
+    type: ActionTypes.ADD_FAVORITE,
+    payload: dishId
 });
 
-export const deleteFavourite = (dishId) => ({
-  type: ActionTypes.DELETE_FAVOURITE,
-  payload: dishId
-})
+export const postComment = (dishId,rating,author,comment)  => (dispatch) => {
+
+    const newComment = {
+        dishId: dishId,
+        rating: rating,
+        author: author,
+        comment: comment
+    };
+    newComment.date = new Date().toISOString();
+
+    setTimeout(() => {
+        dispatch(addComment(newComment));
+    }, 2000);
+};
+
+
+export const addComment = (comment) => ({
+    type: ActionTypes.ADD_COMMENT,
+    payload: comment
+});
