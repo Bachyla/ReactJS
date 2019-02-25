@@ -827,6 +827,7 @@ class SearchReviews extends Component {
                             </div>
                         </div>
                     </form>
+                    
                     <div className="search-buttons-wrapper">
                         <a href="/"><img 
                             src={ClearSearchImage}                 
@@ -841,8 +842,9 @@ class SearchReviews extends Component {
                             width="95"
                             height="25"/></a>
                     </div>
+
                     <div className="search-buttons-wrapper">
-                    <a href="/" onClick={(e) => e.preventDefault()} className="clear-form-button"><u>Give Us Feedback about Advanced Search</u></a>
+                        <a href="/" onClick={(e) => e.preventDefault()} className="clear-form-button"><u>Give Us Feedback about Advanced Search</u></a>
                     </div>
                 </div>
             </Spinner>
