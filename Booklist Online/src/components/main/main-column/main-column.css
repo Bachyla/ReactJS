@@ -451,6 +451,12 @@
 }
 /* Right Column component END */
 /* Search Review page START */
+.annotation {
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana;
+    font-weight: normal;
+}
+
 .search-wrapper {
     padding: 2.5px 70px 2.5px 70px;
 }
@@ -493,11 +499,23 @@
 .form-flex {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .and-or-select {
     width: 50px;
     margin: 1px 2px 1px 2px;
+}
+
+.taxonomy-select {
+    width: 305px;
+}
+
+.clear-form-button {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #8f4235;
+    cursor: pointer;
 }
 /* Search Review page END */
 
