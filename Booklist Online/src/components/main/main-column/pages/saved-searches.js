@@ -8,7 +8,7 @@ class SavedSearches extends Component {
             <Fragment>
                 <NavAdvancedSearch ssActive={true}/>
                 <div className="search-wrapper">
-                    
+                    <h3 className="search-title grey-border">Saved Searches: Amanda</h3>
                 </div>
             </Fragment>
         )

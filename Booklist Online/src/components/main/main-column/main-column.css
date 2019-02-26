@@ -76,6 +76,10 @@
     width: 606px;
 }
 
+.grey-border {
+    border-bottom: 2px solid lightgrey;
+}
+
 /* Online Exclusive Reviews subcomponent START*/
 .oer-main-column {
     padding-right: 37px;
