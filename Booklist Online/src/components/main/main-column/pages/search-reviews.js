@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import NavAdvancedSearch from '../../../navigation-advanced-search';
 import Spinner from '../../../spinner';
@@ -8,7 +8,7 @@ import SearchNowImage from '../../../../assets/images/advanced-search/search-now
 
 class SearchReviews extends Component {
     state = {
-        isLoading : false,
+        isLoading : true,
     }
 
     componentDidMount() {
@@ -19,11 +19,16 @@ class SearchReviews extends Component {
         }, 1000);
     }
 
+    componentWillUnmount() {
+        this.setState({ isLoading: false })
+    }
+
     render() {
         const { isLoading } = this.state;
         return (
+            <Fragment>
+            <NavAdvancedSearch srActive={true}/>
             <Spinner isLoading={isLoading}>
-                <NavAdvancedSearch srActive={true}/>
                 <div className="search-wrapper">
                     <div className="search-buttons-wrapper">
                         <a href="/"><img 
@@ -848,6 +853,7 @@ class SearchReviews extends Component {
                     </div>
                 </div>
             </Spinner>
+            </Fragment>
         )
     }
 }
