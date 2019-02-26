@@ -164,9 +164,9 @@
 }
 
 .best-new-books-image {
+    display: block;
     height: auto;
     width: 175px;
-    display: block;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -260,6 +260,7 @@
 }
 
 .ns-email-input {
+    display: block;
     width: 345px;
     border-radius: 3px;
     border-image: initial;
@@ -274,7 +275,6 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0px;
-    display: block;
     height: auto;
 }
 
