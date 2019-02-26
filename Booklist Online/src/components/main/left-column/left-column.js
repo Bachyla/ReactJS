@@ -9,11 +9,11 @@ import FromBookLinks from './from-book-links'
 const LeftColumn = () => {
     return (
         <Fragment>
-            <div className="left-column">
+            <section className="left-column">
                 <QuickSearch />
                 <Issues />
                 <FromBookLinks />
-            </div>
+            </section>
         </Fragment>
     );
 };

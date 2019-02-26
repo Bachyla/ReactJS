@@ -10,7 +10,7 @@ import border2 from '../../assets/images/header-tb-border.gif';
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <img src={border2} className="top-border" alt=""/>
             <img src={icon} className="logo" alt="Logo icon" width="275" height="90"/>
             <img src={border1} className="left-border" alt=""/>
@@ -18,7 +18,7 @@ const Header = () => {
             <FormLogin />
             <h1 className="title">Booklist Online: More than 200,000 book reviews for librarians, book groups, and book lovers—from the trusted experts at the American Library Association</h1>
             <img src={border2} className="top-border" alt=""/>
-        </div>
+        </header>
     );
 };
 

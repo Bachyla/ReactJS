@@ -20,7 +20,7 @@ import { Switch, Route } from 'react-router-dom';
 export default class MainColumn extends Component {
     render() {
         return (
-            <div className="main-column">
+            <section className="main-column">
                 <Switch>
                     <Route path="/" exact component={HomePage} />
                     <Route path="/online-exclusive-reviews" exact component={OnlineExclusiveReviews} />
@@ -34,7 +34,7 @@ export default class MainColumn extends Component {
                     <Route path="/search-features" exact component={SearchFeatures} />
                     <Route path="/saved-searches" exact component={SavedSearches} />
                 </Switch>
-            </div>
+            </section>
         );
     };
 };
