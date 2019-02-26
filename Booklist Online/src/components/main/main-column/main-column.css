@@ -49,12 +49,20 @@
     margin-bottom: 30px;
 }
 
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
 .margin-bottom-15 {
     margin-bottom: 15px;
 }
 
 .margin-bottom-7 {
     margin-bottom: 7px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
 }
 
 .read-more-link {
@@ -458,6 +466,7 @@
     margin: 15px 0 15px 0; 
 }
 /* Contact US page END */
+
 /* Right Column component START */
 .rc-adverting-img {
     display: block;
@@ -467,6 +476,7 @@
 
 }
 /* Right Column component END */
+
 /* Search Review page START */
 .annotation {
     font-size: 10px;
@@ -539,4 +549,35 @@
     margin-right: 10px;
 }
 /* Search Review page END */
+
+/* Saved Searches page START */
+.saved-search-results-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ss-style {
+    background-color: rgb(143, 66, 53);
+}
+
+.saved-search-lable {
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.ss-table-text {
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: normal;
+    padding: 7px;
+    color: white
+}
+
+.ss-links-wrapper {
+    padding: 7px;
+    border: 2px solid lightgray;
+}
+/* Saved Searches page END */
 
