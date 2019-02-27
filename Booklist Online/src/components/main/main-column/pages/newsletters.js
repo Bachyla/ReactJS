@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import NewslettersImage from '../../../../assets/images/newsletters.jpg'
+import newslettersImage from '../../../../assets/images/newsletters.jpg'
 import ShareButtons from '../../../share-buttons';
 
 export default class Newsletters extends Component {
@@ -11,7 +11,7 @@ export default class Newsletters extends Component {
                 <ShareButtons />
 
                 <h3 className="oer-main-title margin-bottom-15">Booklist Online Newsletters</h3>
-                <img src={NewslettersImage} alt="Newsletters" width="532" height="69"/>
+                <img src={newslettersImage} alt="Newsletters" width="532" height="69"/>
                 <p className="oer-span font-size-12">Fill out the form below to receive free newsletters and announcements from <em>Booklist,&nbsp;</em><em>Booklist Online,&nbsp;</em>and <em>The&nbsp;Booklist Reader</em>. (For longer descriptions, visit each newsletter's archive page.)&nbsp;</p>
                 <br />
                 <p className="oer-span font-size-12">To see past issues, browse our archives:&nbsp;
@@ -158,7 +158,7 @@ export default class Newsletters extends Component {
                         </button>
 
                         <span className="pers-data-title">Personal Data Notification</span>
-                        <p className="pers-data-text">Booklist, an American Library Association publication, uses this webform in order to fulfill your newsletter and announcement preferences. Your personal data is stored and used to fulfill your requests for services from Booklist. Booklist will occasionally convey news to you on behalf of ourselves or our sponsors based on this data. You can choose to block these messages by adjusting your <a href="https://ala-publishing.informz.net/ala-publishing/pages/booklist_comm" className="pers-data-link" rel="noreferrer noopener" target="_blank">communications preferences</a>. Your e-mail may be shared with sponsors of a newsletter should you express interest in their products or content related to those products. If the sponsors choose to communicate with you by e-mail, they are obligated to provide you with an opportunity to opt-out from future e-mails in compliance with applicable laws. For more information, review <a href="http://www.ala.org/privacypolicy" className="pers-data-link" rel="noreferrer noopener" target="_blank">ALA’s Privacy Policy</a>.</p>
+                        <p className="pers-data-text">Booklist, an American Library Association publication, uses this webform in order to fulfill your newsletter and announcement preferences. Your personal data is stored and used to fulfill your requests for services from Booklist. Booklist will occasionally convey news to you on behalf of ourselves or our sponsors based on this data. You can choose to block these messages by adjusting your <a href="https://ala-publishing.informz.net/ala-publishing/pages/booklist_comm" className="pers-data-link" rel="noreferrer noopener" target="_blank"><u>communications preferences,</u></a>. Your e-mail may be shared with sponsors of a newsletter should you express interest in their products or content related to those products. If the sponsors choose to communicate with you by e-mail, they are obligated to provide you with an opportunity to opt-out from future e-mails in compliance with applicable laws. For more information, review <a href="http://www.ala.org/privacypolicy" className="pers-data-link" rel="noreferrer noopener" target="_blank">ALA’s Privacy Policy</a>.</p>
                     </form>
                 </div>
             </div>

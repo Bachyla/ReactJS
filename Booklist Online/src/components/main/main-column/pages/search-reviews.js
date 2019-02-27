@@ -3,8 +3,8 @@ import React, { Component, Fragment } from 'react';
 import NavAdvancedSearch from '../../../navigation-advanced-search';
 import Spinner from '../../../spinner';
 
-import ClearSearchImage from '../../../../assets/images/advanced-search/clear-search.gif';
-import SearchNowImage from '../../../../assets/images/advanced-search/search-now.gif';
+import clearSearchImage from '../../../../assets/images/advanced-search/clear-search.gif';
+import searchNowImage from '../../../../assets/images/advanced-search/search-now.gif';
 
 class SearchReviews extends Component {
     state = {
@@ -32,13 +32,13 @@ class SearchReviews extends Component {
                 <div className="search-wrapper">
                     <div className="search-buttons-wrapper">
                         <a href="/"><img 
-                            src={ClearSearchImage}                 
+                            src={clearSearchImage}                 
                             alt="Clear Search"
                             className="search-buttons"
                             width="95"
                             height="25"/></a>
                         <a href="/"><img 
-                            src={SearchNowImage}                 
+                            src={searchNowImage}                 
                             alt="Clear Search"
                             className="search-buttons"
                             width="95"
@@ -835,13 +835,13 @@ class SearchReviews extends Component {
                     
                     <div className="search-buttons-wrapper">
                         <a href="/"><img 
-                            src={ClearSearchImage}                 
+                            src={clearSearchImage}                 
                             alt="Clear Search"
                             className="search-buttons"
                             width="95"
                             height="25"/></a>
                         <a href="/"><img 
-                            src={SearchNowImage}                 
+                            src={searchNowImage}                 
                             alt="Clear Search"
                             className="search-buttons"
                             width="95"

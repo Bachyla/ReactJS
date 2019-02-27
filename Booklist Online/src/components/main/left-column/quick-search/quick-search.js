@@ -20,11 +20,13 @@ const QuickSearch = () => {
                         className="search-input"
                         type="text"
                         name="search" />
-                    <input
-                        className="submit-input"
-                        type="image" 
-                        src={SubmitImage} 
-                        alt="Submit Form" />
+                    <Link to="/search-results/">
+                        <input
+                            className="submit-input"
+                            type="image" 
+                            src={SubmitImage} 
+                            alt="Submit Form" />
+                    </Link>
                 </div>
                 <div className="search-parameters">
                     <select>
