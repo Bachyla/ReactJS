@@ -49,12 +49,20 @@
     margin-right: 5px;
 }
 
-.margin-bottom-30 {
-    margin-bottom: 30px;
+.margin-left-8 {
+    margin-left: 8px;
+}
+
+.margin-bottom-170 {
+    margin-bottom: 170px !important;
 }
 
 .margin-bottom-50 {
     margin-bottom: 50px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
 }
 
 .margin-bottom-15 {
@@ -589,7 +597,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 3px 7px 200px 7px;
+    margin: 3px 7px 10px 7px;
 }
 
 .desc {
@@ -601,6 +609,7 @@
 }
 
 .search-results-nav {
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -630,7 +639,7 @@
     font-size: 9px;
     font-weight: normal;
     color: rgb(153, 0, 0);
-    padding: 2px 5px 2px 5px;
+    margin: 2px 5px 2px 5px;
 }
 
 .selected {
@@ -639,7 +648,7 @@
 
 .sort-settings {
     display: flex;
-    padding: 20px 5px 20px 5px;
+    padding: 15px 5px 0px 5px;
 }
 
 .sort-settings-title {
@@ -647,7 +656,6 @@
     font-size: 10px;
     font-weight: bold;
 }
-
 /* Search Results page END */
 
 

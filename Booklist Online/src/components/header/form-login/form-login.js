@@ -55,13 +55,11 @@ export default class FormLogin extends Component {
                 </div>
                     <p>You must be logged in to read full text of reviews.</p>
                     <p className="p-small">> Logged-in users can make lists, save searches, e-mail, and more!</p>
-                    <p className="p-small">> Try a 
-                        <a 
-                            href="*"
-                            title="Try a free 14-day trial of Booklist Online today!">free trial </a> 
+                    <p className="p-small">> Try a
+                        <a href="*"
+                            title="Try a free 14-day trial of Booklist Online today!"> free trial </a> 
                             or 
-                        <a 
-                            href="*"
+                        <a href="*"
                             title="Subscribe"> subscribe </a> 
                             today
                     </p>

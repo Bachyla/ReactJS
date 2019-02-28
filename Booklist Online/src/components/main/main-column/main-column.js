@@ -14,6 +14,7 @@ import SearchReviews from './pages/search-reviews';
 import SearchFeatures from './pages/search-features';
 import SavedSearches from './pages/saved-searches';
 import SearchResults from './pages/search-results';
+import SearchResPage1 from './pages/search-results-pages/page1';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -35,6 +36,7 @@ export default class MainColumn extends Component {
                     <Route path="/search-features" exact component={SearchFeatures} />
                     <Route path="/saved-searches" exact component={SavedSearches} />
                     <Route path="/search-results" exact component={SearchResults} />
+                    <Route path="/page1" exact component={SearchResPage1} />
                 </Switch>
             </section>
         );
