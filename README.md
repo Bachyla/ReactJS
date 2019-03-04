@@ -1,15 +1,15 @@
-<h1 align="center">Burger Builder</h1>
+<h1 align="center">ReactJS projects</h1>
 
 <div align="center">
   <sub>Here you will find projects made with react.js as primary web development tool.</sub>
 </div>
 
 <br/>
-
-![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)
-![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)
+<div align="center">
+    ![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)
+    ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+    ![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)
+</div>
 
 ## Description
 <div align="center">
