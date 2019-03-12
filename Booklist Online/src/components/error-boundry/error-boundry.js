@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import ErrorIndicator from '../error-indicator';
+import ErrorIndicator from "../error-indicator";
 
 export default class ErrorBoundry extends Component {
-
   state = {
     hasError: false
   };
@@ -16,9 +15,9 @@ export default class ErrorBoundry extends Component {
 
   render() {
     if (this.state.hasError) {
-        return <ErrorIndicator />
+      return <ErrorIndicator />;
     } else {
-        return this.props.children;
+      return this.props.children;
     }
   }
 }

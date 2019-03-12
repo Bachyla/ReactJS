@@ -1,19 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import './error-indicator.css';
-import icon from '../../assets/images/logo.gif';
+import "./error-indicator.css";
+import icon from "../../assets/images/logo.gif";
 
 const ErrorIndicator = () => {
   return (
     <div className="error-indicator">
-      <img src={icon} width="275" height="90" alt="error icon"/>
+      <img src={icon} width="275" height="90" alt="error icon" />
       <span className="boom">BOOM!</span>
-      <span className="boom">
-        something has gone terribly wrong
-      </span>
-      <span className="boom">
-        (but we already sent droids to fix it)
-      </span>
+      <span className="boom">something has gone terribly wrong</span>
+      <span className="boom">(but we already sent droids to fix it)</span>
     </div>
   );
 };

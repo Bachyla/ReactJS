@@ -1,63 +1,63 @@
 .input {
-    display: block;
-    width: 204px;
+  display: block;
+  width: 204px;
 }
 
 .password-input {
-    width: 184px;
-    display: block;
-    margin-bottom: 10px;
+  width: 184px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .submit-input {
-    display: block;
-    width: 23px;
-    height: 19px;
+  display: block;
+  width: 23px;
+  height: 19px;
 }
 
 .form {
-    float: right;
-    margin-top: 5px;
-    width: 224px;
+  float: right;
+  margin-top: 5px;
+  width: 224px;
 }
 
 .label {
-    display: block;
-    font-family: Verdana;
-    font-size: 11px;
-    font-weight: bold;
-    color: #FFFFFF;
+  display: block;
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .display-flex {
-    display: flex;
+  display: flex;
 }
 
 p {
-    margin: 0;
-    /* width: 240px; */
+  margin: 0;
+  /* width: 240px; */
 }
 
 .p-small {
-    text-indent: -13px;
-    font-weight: 100;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 15px;
+  text-indent: -13px;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 a {
-    font-family: Verdana;
-    font-size: 11px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .margin-bottom-5 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
