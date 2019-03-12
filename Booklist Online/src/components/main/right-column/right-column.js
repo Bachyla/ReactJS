@@ -1,18 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import './right-column.css';
+import "./right-column.css";
 
-import FollowButtons from './follow-buttons';
+import FollowButtons from "./follow-buttons";
 
-import AdvertisingImage from '../../../assets/images/advertising/right-column-banner.png'
+import AdvertisingImage from "../../../assets/images/advertising/right-column-banner.png";
 
 const RightColumn = () => {
-    return (
-        <section className="right-column">
-            <FollowButtons />
-            <a href="https://bls.pcdfusion.com/pcd/Order?iKey=I**MW8" title="Click here to subscribe!"><img src={AdvertisingImage} className="rc-adverting-img" alt="Click here to subscribe!" width="160" height="600"></img></a>
-        </section>
-    );
+  return (
+    <section className="right-column">
+      <FollowButtons />
+      <a
+        href="https://bls.pcdfusion.com/pcd/Order?iKey=I**MW8"
+        title="Click here to subscribe!">
+        <img
+          src={AdvertisingImage}
+          className="rc-adverting-img"
+          alt="Click here to subscribe!"
+          width="160"
+          height="600"
+        />
+      </a>
+    </section>
+  );
 };
 
 export default RightColumn;

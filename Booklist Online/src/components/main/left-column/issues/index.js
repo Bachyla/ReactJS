@@ -1,3 +1,3 @@
-import Issues from './issues';
+import Issues from "./issues";
 
 export default Issues;

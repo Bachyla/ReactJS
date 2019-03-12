@@ -1,14 +1,14 @@
 .main-title {
-    font-family: Verdana;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    color: #3e3c3a;
+  font-family: Verdana;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #3e3c3a;
 }
 
 .link {
-    display: block;
-    margin: 10px 15px 30px 15px;
+  display: block;
+  margin: 10px 15px 30px 15px;
 }

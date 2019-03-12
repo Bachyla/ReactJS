@@ -1,3 +1,3 @@
-import MainColumn from './main-column';
+import MainColumn from "./main-column";
 
 export default MainColumn;

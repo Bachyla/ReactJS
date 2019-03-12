@@ -24,10 +24,10 @@ class SavedSearches extends Component {
                     </div>
 
                     <div className="saved-search-results-wrapper margin-bottom-15 ss-links-wrapper">
-                        <a href="/" class="clear-form-button"><u>RUN SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>RENAME</u></a>
-                        <a href="/" class="clear-form-button"><u>DELETE</u></a>
+                        <a href="/" className="clear-form-button"><u>RUN SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>RENAME</u></a>
+                        <a href="/" className="clear-form-button"><u>DELETE</u></a>
                     </div>
 
                     <div className="saved-search-results-wrapper ss-style margin-bottom-50">
@@ -37,10 +37,10 @@ class SavedSearches extends Component {
                     </div>
 
                     <div className="saved-search-results-wrapper margin-bottom-15 ss-links-wrapper">
-                        <a href="/" class="clear-form-button"><u>RUN SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>RENAME</u></a>
-                        <a href="/" class="clear-form-button"><u>DELETE</u></a>
+                        <a href="/" className="clear-form-button"><u>RUN SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>RENAME</u></a>
+                        <a href="/" className="clear-form-button"><u>DELETE</u></a>
                     </div>
 
                     <div className="saved-search-results-wrapper ss-style margin-bottom-50">
@@ -50,10 +50,10 @@ class SavedSearches extends Component {
                     </div>
 
                     <div className="saved-search-results-wrapper margin-bottom-15 ss-links-wrapper">
-                        <a href="/" class="clear-form-button"><u>RUN SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>RENAME</u></a>
-                        <a href="/" class="clear-form-button"><u>DELETE</u></a>
+                        <a href="/" className="clear-form-button"><u>RUN SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>RENAME</u></a>
+                        <a href="/" className="clear-form-button"><u>DELETE</u></a>
                     </div>
 
                     <div className="saved-search-results-wrapper ss-style margin-bottom-50">
@@ -63,10 +63,10 @@ class SavedSearches extends Component {
                     </div>
 
                     <div className="saved-search-results-wrapper margin-bottom-15 ss-links-wrapper">
-                        <a href="/" class="clear-form-button"><u>RUN SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>RENAME</u></a>
-                        <a href="/" class="clear-form-button"><u>DELETE</u></a>
+                        <a href="/" className="clear-form-button"><u>RUN SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>RENAME</u></a>
+                        <a href="/" className="clear-form-button"><u>DELETE</u></a>
                     </div>
 
                     <div className="saved-search-results-wrapper ss-style margin-bottom-50">
@@ -76,10 +76,10 @@ class SavedSearches extends Component {
                     </div>
 
                     <div className="saved-search-results-wrapper margin-bottom-15 ss-links-wrapper">
-                        <a href="/" class="clear-form-button"><u>RUN SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>RENAME</u></a>
-                        <a href="/" class="clear-form-button"><u>DELETE</u></a>
+                        <a href="/" className="clear-form-button"><u>RUN SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>RENAME</u></a>
+                        <a href="/" className="clear-form-button"><u>DELETE</u></a>
                     </div>
 
                     <div className="saved-search-results-wrapper ss-style margin-bottom-50">
@@ -89,10 +89,10 @@ class SavedSearches extends Component {
                     </div>
 
                     <div className="saved-search-results-wrapper margin-bottom-15 ss-links-wrapper">
-                        <a href="/" class="clear-form-button"><u>RUN SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
-                        <a href="/" class="clear-form-button"><u>RENAME</u></a>
-                        <a href="/" class="clear-form-button"><u>DELETE</u></a>
+                        <a href="/" className="clear-form-button"><u>RUN SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>VIEW/EDIT SEARCH</u></a>
+                        <a href="/" className="clear-form-button"><u>RENAME</u></a>
+                        <a href="/" className="clear-form-button"><u>DELETE</u></a>
                     </div>
                 </div>
             </Fragment>

@@ -1,16 +1,16 @@
 .social-links {
-    font-family: verdana;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
+  font-family: verdana;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
 }
 
 .inline-flex {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .border-radius-0 {
-    border-radius: 0%;
+  border-radius: 0%;
 }

@@ -1,3 +1,3 @@
-import QuickSearch from './quick-search';
+import QuickSearch from "./quick-search";
 
 export default QuickSearch;

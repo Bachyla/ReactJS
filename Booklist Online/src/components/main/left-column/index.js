@@ -1,3 +1,3 @@
-import LeftColumn from './left-column';
+import LeftColumn from "./left-column";
 
 export default LeftColumn;

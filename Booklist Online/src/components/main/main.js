@@ -1,42 +1,42 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './main.css';
-import Border2 from '../../assets/images/header-tb-border.gif';
+import "./main.css";
+import Border2 from "../../assets/images/header-tb-border.gif";
 
-import LeftColumn from './left-column';
-import MainColumn from './main-column';
-import RightColumn from './right-column';
-import Spinner from '../spinner';
+import LeftColumn from "./left-column";
+import MainColumn from "./main-column";
+import RightColumn from "./right-column";
+import Spinner from "../spinner";
 
 class Main extends Component {
-    state = {
-        isLoading: true,
-    }
+  state = {
+    isLoading: true
+  };
 
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                isLoading: false,
-            })
-        }, 1000);
-    }
-    
-    render() {
-        const { isLoading } = this.state;
-        return (
-        <Spinner isLoading={isLoading}>
-            <div className="main-container">
-                <img src={Border2} className="top-border" alt=""/>
-                <div className="flex">
-                    <LeftColumn />
-                    <MainColumn />
-                    <RightColumn />
-                </div>
-                <img src={Border2} className="top-border" alt=""/>
-            </div>
-        </Spinner>
-        )
-    }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        isLoading: false
+      });
+    }, 1000);
+  }
+
+  render() {
+    const { isLoading } = this.state;
+    return (
+      <Spinner isLoading={isLoading}>
+        <div className="main-container">
+          <img src={Border2} className="top-border" alt="" />
+          <div className="flex">
+            <LeftColumn />
+            <MainColumn />
+            <RightColumn />
+          </div>
+          <img src={Border2} className="top-border" alt="" />
+        </div>
+      </Spinner>
+    );
+  }
 }
 
 export default Main;

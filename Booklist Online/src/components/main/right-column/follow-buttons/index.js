@@ -1,3 +1,3 @@
-import FollowButtons from './follow-buttons';
+import FollowButtons from "./follow-buttons";
 
 export default FollowButtons;

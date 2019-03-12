@@ -1,75 +1,74 @@
 .navigation {
-    display: flex;
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto;
-    justify-content: space-around;
-    padding: 0;
-    
+  display: flex;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 0;
 }
 
 .navigation li {
-    display: block;
-    font-family: Verdana;
-    font-size: 11px;
-    font-weight: normal;
-    list-style-type: none;
-    text-decoration: none;
-    white-space: nowrap;
-    padding: 8px 0 6px 0;
+  display: block;
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: normal;
+  list-style-type: none;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 8px 0 6px 0;
 }
 
-.navigation a{
-    font-size: 11px;
-    font-family: Verdana;
-    text-decoration: none;
-    white-space: nowrap;
-    color: rgb(153, 0, 0);
-    font-weight: normal;
-    padding-right: 8px;
-    border-right: 2px solid black;
+.navigation a {
+  font-size: 11px;
+  font-family: Verdana;
+  text-decoration: none;
+  white-space: nowrap;
+  color: rgb(153, 0, 0);
+  font-weight: normal;
+  padding-right: 8px;
+  border-right: 2px solid black;
 }
 
 .submenu {
-    position: absolute;
-    display: none;
-    opacity: 0;
-    width: inherit;
-    z-index: 2;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  width: inherit;
+  z-index: 2;
 }
 
 .submenu a {
-    display: block;
-    padding-right: 0;
-    border-right: none;
+  display: block;
+  padding-right: 0;
+  border-right: none;
 }
 
 .submenu li {
-    padding: 2px 3px 2px 3px;
-    width: 100%;
-    border-bottom: 1px solid grey;
-    background-color: white;
+  padding: 2px 3px 2px 3px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  background-color: white;
 }
 
 ul {
-    padding: 3px;
-    text-align: center;
+  padding: 3px;
+  text-align: center;
 }
 
 ul li:hover .submenu {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 ul .submenu li:hover {
-    background-color: black;
+  background-color: black;
 }
 
 ul .submenu li:hover a {
-    color: white;
+  color: white;
 }
 
 .pointer {
-    cursor: pointer;
-    padding: 0;
+  cursor: pointer;
+  padding: 0;
 }
