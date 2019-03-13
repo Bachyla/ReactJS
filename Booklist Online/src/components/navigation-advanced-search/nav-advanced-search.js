@@ -18,7 +18,7 @@ class NavAdvancedSearch extends Component {
         <Link to="/search-reviews/">
           <img
             className="tabs"
-            src={srActive === true ? SearchReviewOn : SearchReviewOff}
+            src={srActive ? SearchReviewOn : SearchReviewOff}
             alt="SR"
             width="94"
             height="36"
@@ -27,7 +27,7 @@ class NavAdvancedSearch extends Component {
         <Link to="/search-features/">
           <img
             className="tabs"
-            src={sfActive === true ? SearchFeaturesOn : SearchFeaturesOff}
+            src={sfActive ? SearchFeaturesOn : SearchFeaturesOff}
             alt="SF"
             width="94"
             height="36"
@@ -36,7 +36,7 @@ class NavAdvancedSearch extends Component {
         <Link to="/saved-searches/">
           <img
             className="tabs"
-            src={ssActive === true ? SavedSearchesOn : SavedSearchesOff}
+            src={ssActive ? SavedSearchesOn : SavedSearchesOff}
             alt="SS"
             width="94"
             height="36"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import FormLogin from "./form-login";
 
@@ -11,13 +12,15 @@ const Header = () => {
   return (
     <header className="header">
       <img src={border2} className="top-border" alt="" />
-      <img
-        src={icon}
-        className="logo"
-        alt="Logo icon"
-        width="275"
-        height="90"
-      />
+      <Link to="/">
+        <img
+          src={icon}
+          className="logo"
+          alt="Logo icon"
+          width="275"
+          height="90"
+        />
+      </Link>
       <img src={border1} className="left-border" alt="" />
       <img src={border1} className="right-border" alt="" />
       <FormLogin />
