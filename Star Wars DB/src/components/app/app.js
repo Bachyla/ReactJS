@@ -54,7 +54,7 @@ export default class App extends Component {
           <Router>
             <div className="stardb-app">
               <Header onServiceChange={this.onServiceChange} />
-              <RandomPlanet />
+              <RandomPlanet /> 
 
               <Switch>
                 <Route path="/" exact component={MainPage} />
