@@ -64,6 +64,7 @@ export default class SwapiService {
       name: planet.name,
       population: planet.population,
       rotationPeriod: planet.rotation_period,
+      terrain: planet.terrain,
       diameter: planet.diameter
     };
   };
@@ -89,6 +90,7 @@ export default class SwapiService {
       gender: person.gender,
       birthYear: person.birth_year,
       eyeColor: person.eye_color,
+      skin_color: person.skin_color,
       mass: person.mass
     };
   };
