@@ -63,6 +63,10 @@ export default class SwapiService {
     return `${this._imageBase}/planets/${id}.jpg`;
   };
 
+  getVehicleImage = ({ id }) => {
+    return `${this._imageBase}/vehicles/${id}.jpg`;
+  };
+
   _extractId = item => {
     const idRegExp = /\/([0-9]*)\/$/;
     return item.url.match(idRegExp)[1];
@@ -111,7 +115,9 @@ export default class SwapiService {
       model: vehicle.model,
       name: vehicle.name,
       passengers: vehicle.passengers,
-      cargoCapacity: vehicle.cargo_capacity
+      cargoCapacity: vehicle.cargo_capacity,
+      length: vehicle.length,
+      vehicleClass: vehicle.vehicle_class
     };
   };
 }

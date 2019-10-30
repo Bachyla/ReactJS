@@ -9,3 +9,25 @@
 .stardb-app .row {
   margin-bottom: 1rem;
 }
+
+.jumbotron {
+  border: 1px solid #444;
+}
+
+.main-page {
+  justify-content: space-around;
+}
+
+.main-page img {
+  width: 30%;
+  margin-bottom: -64px;
+}
+
+@media (max-width: 1040px) {
+  .main-page {
+    flex-direction: column;
+  }
+  .main-page img {
+    display: none;
+  }
+}

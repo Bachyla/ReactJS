@@ -22,6 +22,7 @@ import './app.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import StarshipDetails from '../sw-components/starship-details';
+import VehicleDetails from '../sw-components/vehicle-details';
 
 export default class App extends Component {
   state = {
@@ -67,6 +68,13 @@ export default class App extends Component {
                   render={({ match }) => {
                     const { id } = match.params;
                     return <StarshipDetails itemId={id} />;
+                  }}
+                />
+                <Route
+                  path="/vehicles/:id"
+                  render={({ match }) => {
+                    const { id } = match.params;
+                    return <VehicleDetails itemId={id} />;
                   }}
                 />
 
