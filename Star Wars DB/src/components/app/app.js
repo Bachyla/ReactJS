@@ -10,6 +10,7 @@ import {
   PeoplePage,
   PlanetsPage,
   StarshipsPage,
+  VehiclesPage,
   MainPage,
   LoginPage,
   SecretPage
@@ -60,6 +61,7 @@ export default class App extends Component {
                 <Route path="/people/:id?" component={PeoplePage} />
                 <Route path="/planets" component={PlanetsPage} />
                 <Route path="/starships" exact component={StarshipsPage} />
+                <Route path="/vehicles" exact component={VehiclesPage} />
                 <Route
                   path="/starships/:id"
                   render={({ match }) => {

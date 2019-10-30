@@ -41,6 +41,16 @@ export default class SwapiService {
     return this._transformStarship(starship);
   };
 
+  getAllVehicles = async () => {
+    const res = await this.getResource(`/vehicles/`);
+    return res.results.map(this._transformVehicle).slice(0, 10);
+  };
+
+  getVehicle = async id => {
+    const vehicle = await this.getResource(`/vehicles/${id}/`);
+    return this._transformVehicle(vehicle);
+  };
+
   getPersonImage = ({ id }) => {
     return `${this._imageBase}/characters/${id}.jpg`;
   };
@@ -92,6 +102,16 @@ export default class SwapiService {
       eyeColor: person.eye_color,
       skin_color: person.skin_color,
       mass: person.mass
+    };
+  };
+
+  _transformVehicle = vehicle => {
+    return {
+      id: this._extractId(vehicle),
+      model: vehicle.model,
+      name: vehicle.name,
+      passengers: vehicle.passengers,
+      cargoCapacity: vehicle.cargo_capacity
     };
   };
 }
